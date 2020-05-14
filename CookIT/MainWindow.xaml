@@ -20,6 +20,7 @@
         </StackPanel>
 
         <Grid Margin="250 55 0 0">
+            <Frame x:Name="Main" Margin="158,81,236,114"/>
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
 
@@ -53,9 +54,12 @@
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
+
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <Button Content="Sign Up / Log In" Background="#FF222222" FontSize="17" VerticalAlignment="Center" Margin="20 0" Click="Button_Click" Width="182" Height="52"/>
+
+                        <!--  <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/> -->
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
@@ -64,10 +68,11 @@
                         <TextBlock Text="Help" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+
             </ListView>
         </Grid>
         <Grid HorizontalAlignment="Left" Background="#FF0069C0" Height="113" Margin="339,0,0,0" VerticalAlignment="Top" Width="200"/>
         <Image Source="Images/logo.png"  HorizontalAlignment="Left" Height="120" Margin="381,-7,0,0" VerticalAlignment="Top" Width="173"/>
-        
+
     </Grid>
 </Window>

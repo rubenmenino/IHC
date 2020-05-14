@@ -50,6 +50,15 @@ namespace CookIT
                     GridPrincipal.Children.Clear();
                     GridPrincipal.Children.Add(new AddIngredient());
                     break;
+                case 2:
+                    GridPrincipal.Children.Clear();
+                    break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    break;
+                case 4:
+                    GridPrincipal.Children.Clear();
+                    break;
                 default:
                     break;
             }
@@ -59,6 +68,12 @@ namespace CookIT
         {
             TrainsitionigContentSlide.OnApplyTemplate();
             GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GridPrincipal.Children.Clear();
+            Main.Content = new LoginRegister();
         }
     }
 }
