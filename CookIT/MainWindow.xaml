@@ -53,13 +53,11 @@
                         <TextBlock Text="Add recipes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" ContextMenuOpening="ListViewItem_ContextMenuOpening">
 
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <Button Content="Sign Up / Log In" Background="#FF222222" FontSize="17" VerticalAlignment="Center" Margin="20 0" Click="Button_Click" Width="182" Height="52"/>
-
-                        <!--  <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/> -->
+                        <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">

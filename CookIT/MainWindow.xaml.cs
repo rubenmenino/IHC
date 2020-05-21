@@ -75,5 +75,6 @@ namespace CookIT
             GridPrincipal.Children.Clear();
             Main.Content = new LoginRegister();
         }
+
     }
 }

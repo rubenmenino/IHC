@@ -56,3 +56,36 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-Cook
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\CookIT.csproj.CopyComplete
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\CookIT.exe
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\CookIT.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\CookIT.exe.config
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\CookIT.exe
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\CookIT.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MaterialDesignColors.dll
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MaterialDesignColors.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\bruno\Desktop\IHC-Project\CookIT\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.csprojAssemblyReference.cache
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddIngredient.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Inicio.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\LoginRegister.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\MainWindow.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\App.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT_MarkupCompile.cache
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT_MarkupCompile.lref
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\App.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddIngredient.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Inicio.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\LoginRegister.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\MainWindow.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.g.resources
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.Properties.Resources.resources
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.csproj.GenerateResource.cache
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.csproj.CopyComplete
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.exe
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.pdb

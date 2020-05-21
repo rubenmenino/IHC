@@ -14,10 +14,9 @@
                     <StackPanel Margin="10"/>
                 </StackPanel>
                 <Image Margin="10" Width="400" Height="400" Source="Images/coz1.png" Stretch="UniformToFill"/>
+                <TextBlock HorizontalAlignment="Left" Margin="-170,151,-26,0" TextWrapping="Wrap" FontSize="25" VerticalAlignment="Top" Height="174" Width="196"><Run Text="     Hello!"/><LineBreak/><Run Text=" What do you want to eat"/><LineBreak/><Run Text="today?"/></TextBlock>
             </StackPanel>
+
         </materialDesign:TransitioningContent>
-        <TextBlock HorizontalAlignment="Left" Margin="276,79,0,0" TextWrapping="Wrap" Text="What do you " FontSize="25" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="296,162,0,0" TextWrapping="Wrap" Text="wanna" FontSize="25" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="276,235,0,0" TextWrapping="Wrap" Text="eat today?" FontSize="25" VerticalAlignment="Top" Width="127" RenderTransformOrigin="0.685,0.511"/>
     </Grid>
 </UserControl>
