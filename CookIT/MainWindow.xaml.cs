@@ -100,5 +100,10 @@ namespace CookIT
         {
             Main.Content = null;
         }
+
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

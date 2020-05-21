@@ -20,8 +20,10 @@
         </StackPanel>
 
         <Grid Margin="250 55 0 0">
+
             <Frame x:Name="Main" Margin="158,81,236,114" JournalOwnership="UsesParentJournal" NavigationUIVisibility="Hidden"/>
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            
         </Grid>
 
         <Grid Width="250" HorizontalAlignment="Left" Background="#FF222222">
@@ -53,13 +55,15 @@
                         <TextBlock Text="Add recipes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp" Selected="ListViewItem_Selected">
 
                     <StackPanel Orientation="Horizontal">
+
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
+
                 <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_5">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>

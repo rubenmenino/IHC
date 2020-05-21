@@ -16,28 +16,30 @@ using System.Windows.Shapes;
 namespace CookIT
 {
     /// <summary>
-    /// Interaction logic for LoginRegister.xaml
+    /// Interaction logic for Register.xaml
     /// </summary>
-    public partial class LoginRegister : Page
+    public partial class Register : Page
     {
-        public LoginRegister()
+        public Register()
         {
             InitializeComponent();
         }
 
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        private void Login_Click(object sender, RoutedEventArgs e)
         {
-            user.Text = "";
+
         }
 
-        private void pass_GotFocus_1(object sender, RoutedEventArgs e)
+        private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            pass.Password = "";
+
         }
 
-        private void goToRegistPage(object sender, RoutedEventArgs e)
+        private void Registere_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
+
+   
     }
 }

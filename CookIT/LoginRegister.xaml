@@ -34,7 +34,7 @@
                 <Image Source="Images/logo.png" Height="125" Margin="104,0,106,0"/>
             </StackPanel>
 
-
+            
 
             <StackPanel Grid.Row="1" >
                 <StackPanel Orientation="Horizontal">
@@ -89,11 +89,12 @@
 
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
                     <Button Width="100" Height="40" Content="LOGIN" Margin="60,0,60,0"/>
-                    <Button Width="100" Height="40" Content="REGISTER"/>
+                    <Button Width="100" Height="40" Content="REGISTER" Click="goToRegistPage"/>
                 </StackPanel>
-
+               
 
             </StackPanel>
         </Grid>
     </Grid>
+    
 </Page>

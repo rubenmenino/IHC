@@ -89,3 +89,5 @@ C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.csproj.GenerateResour
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.csproj.CopyComplete
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.exe
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\CookIT.pdb
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\Register.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\Register.g.cs
