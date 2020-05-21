@@ -20,7 +20,7 @@
         </StackPanel>
 
         <Grid Margin="250 55 0 0">
-            <Frame x:Name="Main" Margin="158,81,236,114"/>
+            <Frame x:Name="Main" Margin="158,81,236,114" JournalOwnership="UsesParentJournal" NavigationUIVisibility="Hidden"/>
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
 
@@ -29,38 +29,38 @@
                 <Grid x:Name="GridCursor" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
             <ListView x:Name="ListViewMenu" Margin="0 100" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="0">
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_1">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Home" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Home" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_2">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FoodForkDrink" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Add Ingredients" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_3">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Recipes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_4">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Add recipes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60" ContextMenuOpening="ListViewItem_ContextMenuOpening">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp">
 
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Sign Up / Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="60">
+                <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_5">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Help" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>

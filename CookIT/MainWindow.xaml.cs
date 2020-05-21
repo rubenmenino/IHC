@@ -70,11 +70,35 @@ namespace CookIT
             GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ListViewItem_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            GridPrincipal.Children.Clear();
+            Main.Content = null;
             Main.Content = new LoginRegister();
         }
 
+        private void ListViewItem_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = null;
+        }
+
+        private void ListViewItem_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = null;
+        }
+
+        private void ListViewItem_MouseLeftButtonUp_3(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = null;
+        }
+
+        private void ListViewItem_MouseLeftButtonUp_4(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = null;
+        }
+
+        private void ListViewItem_MouseLeftButtonUp_5(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = null;
+        }
     }
 }

@@ -5,10 +5,15 @@
        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
        xmlns:local="clr-namespace:CookIT"
        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-       mc:Ignorable="d">
+       mc:Ignorable="d" Width="360.3" ShowsNavigationUI="False">
 
     <Grid>
-        <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168*"/>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="3" Margin="0,0,-0.5,0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -33,7 +38,7 @@
 
             <StackPanel Grid.Row="1" >
                 <StackPanel Orientation="Horizontal">
-                    <TextBox FontFamily="Helvetica"
+                    <TextBox x:Name="user" FontFamily="Helvetica"
                             FontWeight="Light"
                             Text="Username"
                             FontSize="20"
@@ -45,21 +50,21 @@
                             HorizontalContentAlignment="Left"
                             Opacity="0.5"
                             Height="33"
-                            Margin="63,0,0,0"/>
+                            Margin="63,0,0,0" GotFocus="TextBox_GotFocus"/>
                     <iconPacks:PackIconMaterialLight Kind="Account"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Center"
                                                Foreground="Black"/>
                 </StackPanel>
-                <Border Width="250"
+                <Border
                        Height="2"
                        Background="White"
-                       Opacity="0.5"/>
+                       Opacity="0.5" Margin="62,0,43,0"/>
 
 
 
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                    <PasswordBox FontFamily="Helvetica"
+                    <PasswordBox x:Name="pass" FontFamily="Helvetica"
                             FontWeight="Light"
                             Password="Password"
                             FontSize="20"
@@ -71,16 +76,16 @@
                             HorizontalContentAlignment="Left"
                             Opacity="0.5"
                             Height="25"
-                            Margin="63,0,0,0"/>
+                            Margin="63,0,0,0" GotFocus="pass_GotFocus_1"/>
                     <iconPacks:PackIconMaterialLight Kind="Lock"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Center"
                                                Foreground="Black"/>
                 </StackPanel>
-                <Border Width="250"
+                <Border
                        Height="2"
                        Background="White"
-                       Opacity="0.5"/>
+                       Opacity="0.5" Margin="62,0,43,0"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
                     <Button Width="100" Height="40" Content="LOGIN" Margin="60,0,60,0"/>
@@ -89,12 +94,6 @@
 
 
             </StackPanel>
-
-
-
-
-
-
         </Grid>
     </Grid>
 </Page>

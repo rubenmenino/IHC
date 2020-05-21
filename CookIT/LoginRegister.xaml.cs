@@ -24,5 +24,16 @@ namespace CookIT
         {
             InitializeComponent();
         }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            user.Text = "";
+        }
+
+        private void pass_GotFocus_1(object sender, RoutedEventArgs e)
+        {
+            pass.Password = "";
+        }
+
     }
 }
