@@ -37,6 +37,7 @@ namespace CookIT
 
         private void goToRegistPage(object sender, RoutedEventArgs e)
         {
+            Register nextPage = new Register();
             
         }
     }
