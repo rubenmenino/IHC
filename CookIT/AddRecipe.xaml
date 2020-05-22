@@ -8,95 +8,63 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AddRecipe">
 
-    <Page.Resources>
-        <Style TargetType="TextBox" x:Key="RecipeName">
-            <Setter Property="Padding" Value="1"/>
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Foreground" Value="#000"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="MinHeight" Value="20"/>
-            <Setter Property="MinWidth" Value="250"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type TextBox}">
-                        <Border x:Name="border"
-                            CornerRadius="10"
-                            BorderBrush="#bfbfbf"
-                            BorderThickness="1"
-                            Background="#fff"
-                            >
-                            <ScrollViewer x:Name="PART_ContentHost"
-                            Focusable="false"
-                            HorizontalScrollBarVisibility="Hidden"
-                            VerticalScrollBarVisibility="Hidden"/>      
-                        </Border>
-                        
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+    
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
 
-        <Style TargetType="TextBox" x:Key="Description">
-            <Setter Property="Padding" Value="1"/>
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Foreground" Value="#000"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="MinHeight" Value="80"/>
-            <Setter Property="MinWidth" Value="250"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type TextBox}">
-                        <Border x:Name="border"
-                            CornerRadius="10"
-                            BorderBrush="#bfbfbf"
-                            BorderThickness="1"
-                            Background="#fff"
-                            >
-                            <ScrollViewer x:Name="PART_ContentHost"
-                            Focusable="false"
-                            HorizontalScrollBarVisibility="Hidden"
-                            VerticalScrollBarVisibility="Hidden"/>
-                        </Border>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
 
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Page.Resources>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-            
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            
-           
-        </Grid.RowDefinitions>
+            </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="Enter recipe name" Margin="5" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="1" Name="RecipeName" Style="{StaticResource RecipeName}" />
-        <Label Grid.Row="2" Content="Select the type of food" Margin="5" Height="30" FontWeight="Bold"/>
-        <RadioButton Grid.Row="3" Grid.Column="0">Vegan</RadioButton>
-        <RadioButton Grid.Row="4" Grid.Column="0">Vegetarian</RadioButton>
-        <RadioButton Grid.Row="3" Grid.Column="1">Meet</RadioButton>
-        <RadioButton Grid.Row="4" Grid.Column="1">Fast Food</RadioButton>
-        <Label Grid.Row="5" Content="Enter recipe description" Margin="5" Height="30" FontWeight="Bold"/>
-        <TextBox Grid.Row="6" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Description" Style="{StaticResource Description}"/>
-        <Button Grid.Row="10" Content="OK" Margin="5" />
-        
-        
-    </Grid>
+            <Label Grid.Row="0" Grid.Column="0" Content="Enter recipe name" Height="40" FontWeight="Bold" FontSize="15"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="RecipeName" Height="40" FontSize="15" />
+            <Label Grid.Row="2" Content="Select the type of food" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
+            <RadioButton Grid.Row="3" Grid.Column="0" Margin="5">Vegan</RadioButton>
+            <RadioButton Grid.Row="4" Grid.Column="0" Margin="5">Vegetarian</RadioButton>
+            <RadioButton Grid.Row="5" Grid.Column="0" Margin="5">Meat</RadioButton>
+            <RadioButton Grid.Row="3" Grid.Column="1" Margin="5">Fast Food</RadioButton>
+            <RadioButton Grid.Row="4" Grid.Column="1" Margin="5">Salad</RadioButton>
+            <RadioButton Grid.Row="5" Grid.Column="1" Margin="5">Fish</RadioButton>
+            <Label Grid.Row="6" Grid.Column="0" Content="Select number of ingredients" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
+            <Button Grid.Row="6" Grid.Column="1" Click="Button_Click_1" Margin="0,50,0,0">Add Ingredient</Button>
+            <StackPanel x:Name="someStack" Grid.Row="7" Margin="0,15,0,0">
+                
+            </StackPanel>
+            <Label Grid.Row="10" Content="Enter recipe description" Margin="0,50,0,0" Height="30" FontWeight="Bold" FontSize="15"/>
+            <TextBox Grid.Row="11" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Description" MinHeight="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" BorderBrush="Black" BorderThickness="1" />
+            <Button Grid.Row="15" Content="OK" Margin="5" />
+
+
+
+
+        </Grid>
+    </ScrollViewer>
+    
 </Page>
