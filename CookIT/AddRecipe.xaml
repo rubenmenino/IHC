@@ -91,7 +91,7 @@
         <Label Grid.Row="2" Content="Select the type of food" Margin="5" Height="30" FontWeight="Bold"/>
         <RadioButton Grid.Row="3" Grid.Column="0">Vegan</RadioButton>
         <RadioButton Grid.Row="4" Grid.Column="0">Vegetarian</RadioButton>
-        <RadioButton Grid.Row="3" Grid.Column="1">Meet</RadioButton>
+        <RadioButton Grid.Row="3" Grid.Column="1">Meat</RadioButton>
         <RadioButton Grid.Row="4" Grid.Column="1">Fast Food</RadioButton>
         <Label Grid.Row="5" Content="Enter recipe description" Margin="5" Height="30" FontWeight="Bold"/>
         <TextBox Grid.Row="6" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Description" Style="{StaticResource Description}"/>
