@@ -43,6 +43,7 @@
 
             </Grid.RowDefinitions>
 
+
             <Label Grid.Row="0" Grid.Column="0" Content="Enter recipe name" Height="40" FontWeight="Bold" FontSize="15"/>
             <TextBox Grid.Row="0" Grid.Column="1" Name="RecipeName" Height="40" FontSize="15" />
             <Label Grid.Row="2" Content="Select the type of food" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
@@ -66,5 +67,5 @@
 
         </Grid>
     </ScrollViewer>
-    
+
 </Page>

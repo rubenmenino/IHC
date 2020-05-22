@@ -48,7 +48,6 @@ namespace CookIT
                     break;
                 case 1:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new AddIngredient());
                     break;
                 case 2:
                     GridPrincipal.Children.Clear();
@@ -85,6 +84,7 @@ namespace CookIT
         private void ListViewItem_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
         {
             Main.Content = null;
+            Main.Content = new AddIngredient();
         }
 
         private void ListViewItem_MouseLeftButtonUp_3(object sender, MouseButtonEventArgs e)

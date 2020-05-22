@@ -24,5 +24,9 @@ namespace CookIT
         {
             InitializeComponent();
         }
+        private void TextBox_GotFocus_1(object sender, RoutedEventArgs e)
+        {
+            TextBox.Text = "";
+        }
     }
 }

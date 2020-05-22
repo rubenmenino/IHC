@@ -131,3 +131,9 @@ C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\Recipes.g.cs
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\Recipes.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\AddRecipe.g.cs
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\AddRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Register.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Recipes.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Register.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Recipes.baml
