@@ -21,9 +21,9 @@
 
         <Grid Margin="250 55 0 0">
 
-            <Frame x:Name="Main" Margin="158,81,236,114" JournalOwnership="UsesParentJournal" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="Main" Margin="70,81,70,35" JournalOwnership="UsesParentJournal" NavigationUIVisibility="Hidden"/>
             <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            
+
         </Grid>
 
         <Grid Width="250" HorizontalAlignment="Left" Background="#FF222222">
