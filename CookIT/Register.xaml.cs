@@ -27,8 +27,8 @@ namespace CookIT
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            //LoginRegister reg = new LoginRegister();
-            //this.Content = reg;
+            LoginRegister reg = new LoginRegister();
+            this.NavigationService.Navigate(reg);
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
@@ -38,8 +38,8 @@ namespace CookIT
 
         private void Registere_Click(object sender, RoutedEventArgs e)
         {
-            Inicio ina = new Inicio();
-            this.Content = ina; 
+           LoginRegister ina = new LoginRegister();
+           this.NavigationService.Navigate(ina);
         }
 
    
