@@ -20,6 +20,7 @@ namespace CookIT
     /// </summary>
     public partial class AddIngredient : UserControl
     {
+        List<string> selectedList = new List<string>();
         public AddIngredient()
         {
             InitializeComponent();
@@ -58,6 +59,54 @@ namespace CookIT
                 veg.Items.Add(item);
                 MessageBox.Show(txt + " added to category " + cat, "Success!");
             }
+        }
+
+        private void dai_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            foreach (var item in dai.SelectedItems)
+            {
+                if (!selectedList.Contains(item.ToString()))
+                {
+                    selectedList.Add(item.ToString());
+
+                }
+            }
+            if (selectedList.Count() == 0) { return; }
+            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
+            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
+            MessageBox.Show(txt);
+        }
+  
+
+        private void fru_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            foreach (var item in fru.SelectedItems)
+            {
+                if (!selectedList.Contains(item.ToString()))
+                {
+                    selectedList.Add(item.ToString());
+                }
+            }
+            if (selectedList.Count() == 0) { return; }
+            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
+            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
+            MessageBox.Show(txt);
+        }
+
+        private void veg_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            foreach (var item in veg.SelectedItems)
+            {
+                if (!selectedList.Contains(item.ToString()))
+                {
+                    selectedList.Add(item.ToString());
+
+                }
+            }
+            if (selectedList.Count() == 0) { return; }
+            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
+            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
+            MessageBox.Show(txt);
         }
     }
 }
