@@ -6,12 +6,10 @@
              xmlns:local="clr-namespace:CookIT"
              mc:Ignorable="d"
              Height="390" Width="494">
-    <Grid Margin="0,0,266,0">
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,-126,0" FontSize="14" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="344"><Run Text="Hi! I'm Chef Gordon Tansley, and CookIT is the best place for anything cooking related! Here you can:"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Store and manage all your recipes"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Ask me which ingredients are missing to "/><Run Text="&#x9;"/><Run Text="cook a meal of your "/><Run Text="choice"/><LineBreak/><LineBreak/><Run Text="&#x9;- Get suggestion on what to cook based on "/><Run Text="&#x9;"/><Run Text="which ingredients you have at home"/><InlineUIContainer>
+    <Grid Margin="-44,0,0,-125">
+        <TextBlock HorizontalAlignment="Left" Margin="-29,10,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="287" Width="410" FontWeight="Bold"><Run Text="   Hi! I'm Chef Gordon Tansley, the master chef at CookIt, the best place for anything cooking related! Here you can:"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Store and manage all your recipes;"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Ask me which ingredients are missing to "/><Run Text="&#x9;"/><Run Text="cook a meal of your "/><Run Text="choice;"/><LineBreak/><LineBreak/><Run Text="&#x9;- Get suggestions on what to cook based on "/><Run Text="&#x9;"/><Run Text="which ingredients you have at home."/></TextBlock>
+        <Button Content="Contact Us" Width="125" Height="40"  Foreground="White" Click="Button_Click_1" Margin="198,281,215,194" />
+        <Image  Source="coz2.png" HorizontalAlignment="Left" Height="472" Margin="294,-54,-135,0" VerticalAlignment="Top" Width="379" RenderTransformOrigin="0.531,0.621"/>
 
-                <Image HorizontalAlignment="Left" Source="/Images/food.jpg"  Height="179" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.435,0.483"/>
-            </InlineUIContainer><InlineUIContainer>
-                <Button Content="Contact Us" Width="125" Height="40"  Foreground="White" Click="Button_Click_1" />
-            </InlineUIContainer><LineBreak/></TextBlock>
     </Grid>
 </UserControl>
