@@ -27,6 +27,7 @@ namespace CookIT
 
         private void BotaoFechar_Click(object sender, RoutedEventArgs e)
         {
+           
             Application.Current.Shutdown();
         }
 

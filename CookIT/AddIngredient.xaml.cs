@@ -25,14 +25,18 @@ namespace CookIT
         List<string> vegList = new List<string>();
         List<string[]> recipeList = new List<string[]>();
         string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot" };
-        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple" };
+        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham" };
         string[] strawbIC = {"Strawberry Ice Cream", "Ice Cream", "Water", "Strawberry"};
+        string[] lemonade = {"Lemonade", "Lemon", "Water", "Sugar" };
+        string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg" };
         public AddIngredient()
         {
             InitializeComponent();
             recipeList.Add(soup);
             recipeList.Add(pizza);
             recipeList.Add(strawbIC);
+            recipeList.Add(lemonade);
+            recipeList.Add(burguer);
 
         }
         private void TextBox_GotFocus_1(object sender, RoutedEventArgs e)
@@ -45,7 +49,7 @@ namespace CookIT
             string txt = TextBox.Text;
             string cat = combo.Text;
 
-            if (cat == "Dairy Products")
+            if (cat == "Daily Products")
             {
                 var item = new ListBoxItem();
                 item.Content = txt;
