@@ -67,81 +67,88 @@ namespace CookIT
         private void dai_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             daiList = new List<string>();
+            var temp = new ListBoxItem();
             foreach (var item in dai.SelectedItems)
             {
                 daiList.Add(item.ToString());
             }
 
-            string txt = "Selected Items:" + Environment.NewLine;
             foreach (var item in daiList)
             {
-                txt += item.ToString() + Environment.NewLine;
+                temp = new ListBoxItem();
+                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+                temp.Foreground = Brushes.White;
+                selGred.Items.Add(temp);
             }
-            foreach (var item in fruList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
-            foreach (var item in vegList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
-            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
-            MessageBox.Show(txtNew);
         }
 
 
         private void fru_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             fruList = new List<string>();
+            var temp = new ListBoxItem();
             foreach (var item in fru.SelectedItems)
             {
                 fruList.Add(item.ToString());
             }
 
-            string txt = "Selected Items:" + Environment.NewLine;
-            foreach (var item in daiList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
             foreach (var item in fruList)
             {
-                txt += item.ToString() + Environment.NewLine;
+                temp = new ListBoxItem();
+                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+                temp.Foreground = Brushes.White;
+                selGred.Items.Add(temp);
             }
-            foreach (var item in vegList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
-            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
-            MessageBox.Show(txtNew);
         }
 
         private void veg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             vegList = new List<string>();
+            var temp = new ListBoxItem();
             foreach (var item in veg.SelectedItems)
             {
-                if (!vegList.Contains(item.ToString()))
-                {
-                    vegList.Add(item.ToString());
+                vegList.Add(item.ToString());
+            }
 
+            foreach(var item in vegList)
+            {
+                temp = new ListBoxItem();
+                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+                temp.Foreground = Brushes.White;
+                selGred.Items.Add(temp);
+            }
+            
+        }
+
+        private void selGred_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            List<object> toRemove = new List<object>();
+            for(int i = selGred.Items.Count-1; i != -1; i--)
+            {
+                if (selGred.SelectedItems.Contains(selGred.Items.GetItemAt(i)))
+                {
+                    toRemove.Add(selGred.Items.GetItemAt(i));
+                    selGred.Items.RemoveAt(i);
                 }
             }
 
-            string txt = "Selected Items:" + Environment.NewLine;
-            foreach (var item in daiList)
+            foreach(var item in toRemove)
             {
-                txt += item.ToString() + Environment.NewLine;
+                if (veg.SelectedItems.Contains(item))
+                {
+                    veg.SelectedItems.Remove(item);
+                }
+                if (dai.SelectedItems.Contains(item))
+                {
+                    dai.SelectedItems.Remove(item);
+                }
+                if (fru.SelectedItems.Contains(item))
+                {
+                    fru.SelectedItems.Remove(item);
+                }
             }
-            foreach (var item in fruList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
-            foreach (var item in vegList)
-            {
-                txt += item.ToString() + Environment.NewLine;
-            }
-            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
-            MessageBox.Show(txtNew);
+
+
         }
     }
 }

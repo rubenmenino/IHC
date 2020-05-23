@@ -8,7 +8,7 @@
              d:DesignHeight="450" Width="1000" HorizontalAlignment="Left">
     <Grid Margin="0,10,353,-10">
         <Label Content="Dairy Products" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="15,185,0,0" VerticalAlignment="Top" Width="110" Background="#FFF44336" SelectionMode="Multiple" SelectionChanged="dai_SelectionChanged">
+        <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="15,185,0,0" VerticalAlignment="Top" Width="110" Background="#FFF44336" SelectionChanged="dai_SelectionChanged">
             <ListBoxItem Content="Butter" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Cheese" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Ice Cream" Foreground="#DDFFFFFF"></ListBoxItem>
@@ -18,7 +18,7 @@
         </ListBox>
 
         <Label Content="Fruits" HorizontalAlignment="Left" Margin="156,160,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="fru" HorizontalAlignment="Left" Background="#FFF44336" Height="195" Margin="161,185,0,0" VerticalAlignment="Top" Width="110" SelectionMode="Multiple" SelectionChanged="fru_SelectionChanged">
+        <ListBox Name="fru" HorizontalAlignment="Left" Background="#FFF44336" Height="195" Margin="161,185,0,0" VerticalAlignment="Top" Width="110" SelectionChanged="fru_SelectionChanged">
             <ListBoxItem Content="Apple" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Avocado" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Banana" Foreground="#DDFFFFFF"></ListBoxItem>
@@ -39,7 +39,7 @@
             <ListBoxItem Content="Strawberry" Foreground="#DDFFFFFF"></ListBoxItem>
         </ListBox>
         <Label Content="Vegetables" HorizontalAlignment="Left" Margin="302,160,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="veg" HorizontalAlignment="Left" Height="195" Background="#FFF44336" Margin="307,185,0,0" VerticalAlignment="Top" Width="110" SelectionMode="Multiple" SelectionChanged="veg_SelectionChanged">
+        <ListBox Name="veg" HorizontalAlignment="Left" Height="195" Background="#FFF44336" Margin="307,185,0,0" VerticalAlignment="Top" Width="110" SelectionChanged="veg_SelectionChanged">
             <ListBoxItem Content="Aspargus" Foreground="#DDFFFFFF"/>
             <ListBoxItem Content="Beans" Foreground="#DDFFFFFF"/>
             <ListBoxItem Content="Broccoli" Foreground="#DDFFFFFF"></ListBoxItem>
@@ -59,7 +59,8 @@
             <ComboBoxItem>Vegetables</ComboBoxItem>
         </ComboBox>
         <Button Content="Add to list" HorizontalAlignment="Left" Margin="221,42,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
-        <ListBox HorizontalAlignment="Left" Height="100" Margin="1031,180,-66,0" VerticalAlignment="Top" Width="72"/>
+        <Label Content="Your Ingredients" HorizontalAlignment="Left" Margin="485,160,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="14"/>
+        <ListBox HorizontalAlignment="Left" Height="194" Margin="489,185,0,0" Background="#FFF44336" VerticalAlignment="Top" Width="100" Name="selGred" SelectionChanged="selGred_SelectionChanged"/>
 
     </Grid>
 </UserControl>
