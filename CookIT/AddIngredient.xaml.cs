@@ -20,7 +20,10 @@ namespace CookIT
     /// </summary>
     public partial class AddIngredient : UserControl
     {
-        List<string> selectedList = new List<string>();
+        List<string> daiList = new List<string>();
+        List<string> fruList = new List<string>();
+        List<string> vegList = new List<string>();
+
         public AddIngredient()
         {
             InitializeComponent();
@@ -63,54 +66,82 @@ namespace CookIT
 
         private void dai_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            daiList = new List<string>();
             foreach (var item in dai.SelectedItems)
             {
-                if (!selectedList.Contains(item.ToString()))
-                {
-                    selectedList.Add(item.ToString());
-
-                }
+                daiList.Add(item.ToString());
             }
-            if (selectedList.Count() == 0) { return; }
-            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
-            
+
+            string txt = "Selected Items:" + Environment.NewLine;
+            foreach (var item in daiList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in fruList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in vegList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
+            MessageBox.Show(txtNew);
         }
-  
+
 
         private void fru_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            fruList = new List<string>();
             foreach (var item in fru.SelectedItems)
             {
-                if (!selectedList.Contains(item.ToString()))
-                {
-                    selectedList.Add(item.ToString());
-                }
+                fruList.Add(item.ToString());
             }
-            if (selectedList.Count() == 0) { return; }
-            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
-            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
-            MessageBox.Show(txt);
+
+            string txt = "Selected Items:" + Environment.NewLine;
+            foreach (var item in daiList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in fruList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in vegList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
+            MessageBox.Show(txtNew);
         }
 
         private void veg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            vegList = new List<string>();
             foreach (var item in veg.SelectedItems)
             {
-                if (!selectedList.Contains(item.ToString()))
+                if (!vegList.Contains(item.ToString()))
                 {
-                    selectedList.Add(item.ToString());
+                    vegList.Add(item.ToString());
 
                 }
             }
-            if (selectedList.Count() == 0) { return; }
-            string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
-            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
-            MessageBox.Show(txt);
-        }
 
-        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
-        {
-
+            string txt = "Selected Items:" + Environment.NewLine;
+            foreach (var item in daiList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in fruList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            foreach (var item in vegList)
+            {
+                txt += item.ToString() + Environment.NewLine;
+            }
+            string txtNew = txt.Replace("System.Windows.Controls.ListBoxItem:", "");
+            MessageBox.Show(txtNew);
         }
     }
 }
