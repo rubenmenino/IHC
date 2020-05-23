@@ -23,10 +23,17 @@ namespace CookIT
         List<string> daiList = new List<string>();
         List<string> fruList = new List<string>();
         List<string> vegList = new List<string>();
-
+        List<string[]> recipeList = new List<string[]>();
+        string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot" };
+        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple" };
+        string[] strawbIC = {"Strawberry Ice Cream", "Ice Cream", "Water", "Strawberry"};
         public AddIngredient()
         {
             InitializeComponent();
+            recipeList.Add(soup);
+            recipeList.Add(pizza);
+            recipeList.Add(strawbIC);
+
         }
         private void TextBox_GotFocus_1(object sender, RoutedEventArgs e)
         {
@@ -66,18 +73,20 @@ namespace CookIT
 
         private void dai_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            daiList = new List<string>();
             var temp = new ListBoxItem();
-            foreach (var item in dai.SelectedItems)
+            temp = new ListBoxItem();
+            temp.Content = (dai.SelectedItem.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+            temp.Foreground = Brushes.White;
+            bool skip = false;
+            foreach (var x in selGred.Items)
             {
-                daiList.Add(item.ToString());
+                if (x.ToString().Replace("System.Windows.Controls.ListBoxItem:", "").Trim().Equals(temp.Content.ToString().Trim()))
+                {
+                    skip = true;
+                }
             }
-
-            foreach (var item in daiList)
+            if (!skip)
             {
-                temp = new ListBoxItem();
-                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
-                temp.Foreground = Brushes.White;
                 selGred.Items.Add(temp);
             }
         }
@@ -85,39 +94,44 @@ namespace CookIT
 
         private void fru_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            fruList = new List<string>();
             var temp = new ListBoxItem();
-            foreach (var item in fru.SelectedItems)
+            temp = new ListBoxItem();
+            temp.Content = (fru.SelectedItem.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+            temp.Foreground = Brushes.White;
+            bool skip = false;
+            foreach(var x in selGred.Items)
             {
-                fruList.Add(item.ToString());
+                if (x.ToString().Replace("System.Windows.Controls.ListBoxItem:", "").Trim().Equals(temp.Content.ToString().Trim()))
+                {
+                    skip = true;
+                }
             }
-
-            foreach (var item in fruList)
+            if (!skip)
             {
-                temp = new ListBoxItem();
-                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
-                temp.Foreground = Brushes.White;
                 selGred.Items.Add(temp);
             }
+           
         }
 
         private void veg_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            vegList = new List<string>();
             var temp = new ListBoxItem();
-            foreach (var item in veg.SelectedItems)
+            temp = new ListBoxItem();
+            temp.Content = (veg.SelectedItem.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+            temp.Foreground = Brushes.White;
+            bool skip = false;
+            foreach (var x in selGred.Items)
             {
-                vegList.Add(item.ToString());
+                if (x.ToString().Replace("System.Windows.Controls.ListBoxItem:", "").Trim().Equals(temp.Content.ToString().Trim()))
+                {
+                    skip = true;
+                }
             }
-
-            foreach(var item in vegList)
+            if (!skip)
             {
-                temp = new ListBoxItem();
-                temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
-                temp.Foreground = Brushes.White;
                 selGred.Items.Add(temp);
             }
-            
+
         }
 
         private void selGred_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -151,55 +165,39 @@ namespace CookIT
 
         }
 
-        private void teste_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            recipeListBox.Items.Clear();
+            ListBoxItem temp = new ListBoxItem();
+            List<String> listSelGred = new List<String>();
+            bool toSkip;
 
-            List<string> vegList = new List<string>()
-            { "cherry", "butter", "bread"};
-
-            List<string> recipes = new List<string>()
-            { "steak", "Butterbread", "Cherrycake", "aqui mete--se as receitas supostamente, nao sei, só que vai dar a receita toda xdd e nao o nome , hmm :x :("};
-
-            List<string> matchedRecipes = recipes.Where(x => vegList
-                                                 .Any(s => x.ToLower().Contains(s.ToLower())))
-                                                 .ToList();
-
-            foreach (string i in matchedRecipes)
+            foreach (var item in selGred.Items)
             {
-                MessageBox.Show(i);
+                listSelGred.Add(item.ToString().Replace("System.Windows.Controls.ListBoxItem:  ", ""));
             }
+            
 
+            foreach(string[] recipe in recipeList)
+            {
+                toSkip = false;
+                for(int i=1; i<recipe.Length; i++)
+                {
+                    if (!listSelGred.Contains(recipe[i]))
+                    {
+                        toSkip = true;
+                    }
+                }
 
-
-
-
-            //List<string> recipes = new List<string>()
-            //{ "steak", "Butterbread", "Cherrycake"};
-
-            //List<string> matchedRecipes = recipes.Where(x => selGredList
-            //                                     .Any(s => x.ToLower().Contains(s.ToLower())))
-            //                                     .ToList();
-
-            //teste.ItemsSource = matchedRecipes;
-
-            //var temp = new ListBoxItem();
-            //foreach (var item in teste.SelectedItems)
-            //{
-            //    daiList.Add(item.ToString());
-            //}
-
-            //foreach (var item in selGredList)
-            //{
-            //    temp = new ListBoxItem();
-            //    temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
-            //    temp.Foreground = Brushes.White;
-            //    selGred.Items.Add(temp);
-            //}
+                if (!recipeListBox.Items.Contains(recipe[0]) && !toSkip)
+                {
+                    temp = new ListBoxItem();
+                    temp.Content = (recipe[0]);
+                    temp.Foreground = Brushes.White;
+                    recipeListBox.Items.Add(temp);
+                }
+            }
         }
     }
 }
