@@ -190,3 +190,7 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\help2.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\Help.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\help2.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Help.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\help2.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Help.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\help2.baml
