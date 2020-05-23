@@ -143,3 +143,5 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-Cook
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\Recipes.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\recipes1.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\recipes1.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipes1.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipes1.baml

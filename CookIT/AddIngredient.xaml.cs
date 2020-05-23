@@ -28,5 +28,36 @@ namespace CookIT
         {
             TextBox.Text = "";
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string txt = TextBox.Text;
+            string cat = combo.Text;
+
+            if (cat == "Dairy Products")
+            {
+                var item = new ListBoxItem();
+                item.Content = txt;
+                item.Foreground = Brushes.White;
+                dai.Items.Add(item);
+                MessageBox.Show(txt + " added to category " + cat, "Success!");
+            }
+            if (cat == "Fruit")
+            {
+                var item = new ListBoxItem();
+                item.Content = txt;
+                item.Foreground = Brushes.White;
+                fru.Items.Add(item);
+                MessageBox.Show(txt + " added to category " + cat, "Success!");
+            }
+            if (cat == "Vegetables")
+            {
+                var item = new ListBoxItem();
+                item.Content = txt;
+                item.Foreground = Brushes.White;
+                veg.Items.Add(item);
+                MessageBox.Show(txt + " added to category " + cat, "Success!");
+            }
+        }
     }
 }
