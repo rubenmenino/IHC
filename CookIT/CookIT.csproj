@@ -72,6 +72,9 @@
     <Compile Include="AddRecipe.xaml.cs">
       <DependentUpon>AddRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="contactUs.xaml.cs">
+      <DependentUpon>contactUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DialogResult.cs" />
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
@@ -93,6 +96,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="contactUs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
