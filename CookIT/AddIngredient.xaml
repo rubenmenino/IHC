@@ -61,6 +61,7 @@
         <Button Content="Add to list" HorizontalAlignment="Left" Margin="221,42,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
         <Label Content="Your Ingredients" HorizontalAlignment="Left" Margin="485,160,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="14"/>
         <ListBox HorizontalAlignment="Left" Height="194" Margin="489,185,0,0" Background="#FFF44336" VerticalAlignment="Top" Width="100" Name="selGred" SelectionChanged="selGred_SelectionChanged"/>
-
+        <ListBox HorizontalAlignment="Left" Height="114" Margin="428,10,0,0" VerticalAlignment="Top" Background="#FFF44336" Name="teste"  Width="122" SelectionChanged="teste_SelectionChanged"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="555,53,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
     </Grid>
 </UserControl>

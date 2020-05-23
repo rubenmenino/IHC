@@ -150,5 +150,56 @@ namespace CookIT
 
 
         }
+
+        private void teste_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            List<string> vegList = new List<string>()
+            { "cherry", "butter", "bread"};
+
+            List<string> recipes = new List<string>()
+            { "steak", "Butterbread", "Cherrycake", "aqui mete--se as receitas supostamente, nao sei, só que vai dar a receita toda xdd e nao o nome , hmm :x :("};
+
+            List<string> matchedRecipes = recipes.Where(x => vegList
+                                                 .Any(s => x.ToLower().Contains(s.ToLower())))
+                                                 .ToList();
+
+            foreach (string i in matchedRecipes)
+            {
+                MessageBox.Show(i);
+            }
+
+
+
+
+
+            //List<string> recipes = new List<string>()
+            //{ "steak", "Butterbread", "Cherrycake"};
+
+            //List<string> matchedRecipes = recipes.Where(x => selGredList
+            //                                     .Any(s => x.ToLower().Contains(s.ToLower())))
+            //                                     .ToList();
+
+            //teste.ItemsSource = matchedRecipes;
+
+            //var temp = new ListBoxItem();
+            //foreach (var item in teste.SelectedItems)
+            //{
+            //    daiList.Add(item.ToString());
+            //}
+
+            //foreach (var item in selGredList)
+            //{
+            //    temp = new ListBoxItem();
+            //    temp.Content = (item.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+            //    temp.Foreground = Brushes.White;
+            //    selGred.Items.Add(temp);
+            //}
+        }
     }
 }
