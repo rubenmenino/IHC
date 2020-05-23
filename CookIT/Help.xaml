@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CookIT.Help"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CookIT"
+             mc:Ignorable="d"
+             Height="390" Width="494">
+    <Grid Margin="0,0,266,0">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,-126,0" FontSize="14" TextWrapping="Wrap" VerticalAlignment="Top" Height="355" Width="344"><Run Text="Hi! I'm Chef Gordon Tansley, and CookIT is the best place for anything cooking related! Here you can:"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Store and manage all your recipes"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;- Ask me which ingredients are missing to "/><Run Text="&#x9;"/><Run Text="cook a meal of your "/><Run Text="choice"/><LineBreak/><LineBreak/><Run Text="&#x9;- Get suggestion on what to cook based on "/><Run Text="&#x9;"/><Run Text="which ingredients you have at home"/><InlineUIContainer>
+
+                <Image HorizontalAlignment="Left" Source="/Images/food.jpg"  Height="179" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.435,0.483"/>
+            </InlineUIContainer><InlineUIContainer>
+                <Button Content="Contact Us" Width="125" Height="40"  Foreground="White" Click="Button_Click_1" />
+            </InlineUIContainer><LineBreak/></TextBlock>
+    </Grid>
+</UserControl>

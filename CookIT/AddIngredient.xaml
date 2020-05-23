@@ -41,7 +41,7 @@
         <Label Content="Vegetables" HorizontalAlignment="Left" Margin="302,160,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="14"/>
         <ListBox Name="veg" HorizontalAlignment="Left" Height="195" Background="#FFF44336" Margin="307,185,0,0" VerticalAlignment="Top" Width="110" SelectionMode="Multiple" SelectionChanged="veg_SelectionChanged">
             <ListBoxItem Content="Aspargus" Foreground="#DDFFFFFF"/>
-            <ListBoxItem Content="Beans" Foreground="#DDFFFFFF"/>
+            <ListBoxItem Content="Beans" Foreground="#DDFFFFFF" Selected="ListBoxItem_Selected"/>
             <ListBoxItem Content="Broccoli" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Cabbage" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Chickpeas" Foreground="#DDFFFFFF"></ListBoxItem>

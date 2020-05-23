@@ -37,8 +37,14 @@ namespace CookIT
 
         private void goToRegistPage(object sender, RoutedEventArgs e)
         {
-            Register nextPage = new Register();
-            
+            //Register nextPage = new Register();
+            //this.Content = nextPage;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Inicio aaa = new Inicio();
+            this.Content = aaa;
         }
     }
 }

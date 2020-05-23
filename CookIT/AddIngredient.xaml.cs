@@ -73,8 +73,7 @@ namespace CookIT
             }
             if (selectedList.Count() == 0) { return; }
             string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
-            var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
-            MessageBox.Show(txt);
+            
         }
   
 
@@ -107,6 +106,11 @@ namespace CookIT
             string txtt = "Selected Items: " + Environment.NewLine + string.Join(Environment.NewLine, selectedList);
             var txt = txtt.Replace("System.Windows.Controls.ListBoxItem: ", "");
             MessageBox.Show(txt);
+        }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -16,32 +16,23 @@ using System.Windows.Shapes;
 namespace CookIT
 {
     /// <summary>
-    /// Interaction logic for Register.xaml
+    /// Interaction logic for Help.xaml
     /// </summary>
-    public partial class Register : Page
+    public partial class Help : UserControl
     {
-        public Register()
+        public Help()
         {
             InitializeComponent();
         }
 
-        private void Login_Click(object sender, RoutedEventArgs e)
-        {
-            //LoginRegister reg = new LoginRegister();
-            //this.Content = reg;
-        }
-
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Registere_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Inicio ina = new Inicio();
-            this.Content = ina; 
+           
         }
-
-   
     }
 }
