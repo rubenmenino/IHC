@@ -51,7 +51,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_4">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="AddBox" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Add recipes" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -59,7 +59,7 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Login" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Log In" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -67,14 +67,14 @@
 
                     <StackPanel Orientation="Horizontal">
 
-                        <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Register" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Sign Up" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
 
                 <ListViewItem Height="60" MouseLeftButtonUp="ListViewItem_MouseLeftButtonUp_5">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Help" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Help" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>

@@ -27,13 +27,20 @@ namespace CookIT
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            recipesdown xxx = new recipesdown();
+            NavigationService.GetNavigationService(this).Navigate(xxx);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             pizzaRecipe pizza = new pizzaRecipe();
             pizza.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            recipeEsquerdaLemonade qqq = new recipeEsquerdaLemonade();
+            NavigationService.GetNavigationService(this).Navigate(qqq);
         }
     }
 }

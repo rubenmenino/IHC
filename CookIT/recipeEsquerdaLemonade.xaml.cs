@@ -30,5 +30,11 @@ namespace CookIT
             lemonadeRecipe lemo = new lemonadeRecipe();
             lemo.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            recipes1 ttt = new recipes1();
+            NavigationService.GetNavigationService(this).Navigate(ttt);
+        }
     }
 }

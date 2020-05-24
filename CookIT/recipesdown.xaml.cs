@@ -24,5 +24,17 @@ namespace CookIT
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            recipes1 aaa = new recipes1();
+            NavigationService.GetNavigationService(this).Navigate(aaa);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            recipeEsquerdaLemonade uuu = new recipeEsquerdaLemonade();
+            NavigationService.GetNavigationService(this).Navigate(uuu);
+        }
     }
 }

@@ -13,15 +13,15 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         </Border>
         <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,5,0,0" Name="textBlockHeading" Text="Registration:" VerticalAlignment="Top" Width="110"  FontSize="17" FontStretch="ExtraCondensed"/>
         <!--Button as a Link button using style-->
-        <Button Margin="263,306,29,-13" Content="Already have an account? Login!" Cursor="Hand" Click="Login_Click">
+        <Button Margin="263,306,29,-13" Content="Already have an account? Login!"  Cursor="Hand" Click="Login_Click" >
             <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <TextBlock TextDecorations="Underline">  
+                <ControlTemplate TargetType="Button" >
+                    <TextBlock TextDecorations="Underline" >  
                     <ContentPresenter />
                     </TextBlock>
                 </ControlTemplate>
             </Button.Template>
-            <Button.Style>
+            <Button.Style >
                 <Style TargetType="Button">
                     <Setter Property="Foreground" Value="Navy" />
                     <Style.Triggers>

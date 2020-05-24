@@ -87,7 +87,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <Button Content="6"  FontFamily="Marlett" FontSize="20" RenderTransformOrigin="0.5,0.5" Margin="4,6,2,12">
+            <Button Content="6"  FontFamily="Marlett" FontSize="20" RenderTransformOrigin="0.5,0.5" Margin="4,6,2,12" Click="Button_Click_2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
