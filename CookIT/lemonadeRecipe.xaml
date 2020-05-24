@@ -1,0 +1,13 @@
+﻿<Window x:Class="CookIT.lemonadeRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookIT"
+        mc:Ignorable="d"
+        Title="lemonadeRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="36,78,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="In a small saucepan, combine sugar and 1 cup water. Bring to boil and stir to dissolve sugar. Allow to cool to room temperature, then cover and refrigerate until chilled. "/><LineBreak/><Run/><LineBreak/><Run Text="Remove seeds from lemon juice, but leave pulp. In pitcher, stir together chilled syrup, lemon juice and remaining 7 cups water. "/></TextBlock>
+        <Image HorizontalAlignment="Left" Source="/Images/lemonade.jpg" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
+    </Grid>
+</Window>
