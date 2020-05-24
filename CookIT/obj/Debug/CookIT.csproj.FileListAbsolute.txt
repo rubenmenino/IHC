@@ -241,3 +241,5 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\recipesdown.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\contactUs.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\contactUs.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\pizzaRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\pizzaRecipe.baml

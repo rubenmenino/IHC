@@ -82,6 +82,9 @@
     <Compile Include="help2.xaml.cs">
       <DependentUpon>help2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="pizzaRecipe.xaml.cs">
+      <DependentUpon>pizzaRecipe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="recipes1.xaml.cs">
       <DependentUpon>recipes1.xaml</DependentUpon>
     </Compile>
@@ -140,6 +143,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="pizzaRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="recipes1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="CookIT.pizzaRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookIT"
+        mc:Ignorable="d"
+        Title="pizzaRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="36,78,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="   Preheat oven to 450 degrees F (230 degrees C)."/><LineBreak/><Run/><LineBreak/><Run Text="Turn dough out onto a lightly floured surface and pat or roll into a round. Transfer crust to a lightly greased pizza pan or baker's peel dusted with cornmeal. "/><LineBreak/><Run/><LineBreak/><Run Text="Spread with tomato, cheese and pineapple and bake in preheated oven for 15 to 20 minutes, or until golden brown. Let baked pizza cool for 5 minutes before serving. "/></TextBlock>
+        <Image HorizontalAlignment="Left" Source="/Images/pizza.png" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
+    </Grid>
+</Window>

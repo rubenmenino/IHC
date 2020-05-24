@@ -25,7 +25,7 @@ namespace CookIT
         List<string> vegList = new List<string>();
         List<string[]> recipeList = new List<string[]>();
         string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot" };
-        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham" };
+        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
         string[] strawbIC = {"Strawberry Ice Cream", "Ice Cream", "Water", "Strawberry"};
         string[] lemonade = {"Lemonade", "Lemon", "Water", "Sugar" };
         string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg" };

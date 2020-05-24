@@ -29,5 +29,11 @@ namespace CookIT
         {
             
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            pizzaRecipe pizza = new pizzaRecipe();
+            pizza.Show();
+        }
     }
 }
