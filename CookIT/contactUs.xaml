@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CookIT"
         mc:Ignorable="d"
-        Title="contactUs" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="contactUs" Height="400" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="157*"/>
             <ColumnDefinition Width="239*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="189,69,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="287" Width="456" FontWeight="Bold" Grid.ColumnSpan="2"><Run Text="  CookIT is as easy as it gets! However, I'll be following you around givinf some tips to browse the app smoothly."/><LineBreak/><Run/><LineBreak/><Run Text =" I'm just a Chef, a really good Chef actually. But if you have any thechnical problems, you should contact my developer friends:"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;Bruno Caseiro: caseiro@ua.pt "/><LineBreak/><Run Text="&#x9;Mateusz Roganowicz: mateusz.roganowicz@ua.pt "/><Run Text="&#x9;"/><Run Text="Ruben Menino: ruben.menino@ua.pt"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="100,46,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="288" Width="456" FontWeight="Bold" Grid.ColumnSpan="2"><Run Text="  CookIT is as easy as it gets! However, I'll be following you around giving you some tips to browse the app smoothly."/><LineBreak/><Run/><LineBreak/><Run Text =" I'm just a Chef, a really good Chef actually. But if you have any thechnical problems, you should contact my developer friends:"/><LineBreak/><Run/><LineBreak/><Run Text="&#x9;Bruno Caseiro: caseiro@ua.pt "/><LineBreak/><Run Text="&#x9;Mateusz Roganowicz: mateusz.roganowicz@ua.pt "/><Run Text="&#x9;"/><Run Text="Ruben Menino: ruben.menino@ua.pt"/></TextBlock>
     </Grid>
 </Window>

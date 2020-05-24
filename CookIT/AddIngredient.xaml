@@ -5,63 +5,70 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CookIT"
              mc:Ignorable="d" 
-             d:DesignHeight="450" Width="1000" HorizontalAlignment="Left">
-    <Grid Margin="0,10,300,-10">
-        <Label Content="Dairy Products" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="135" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="15,185,0,0" VerticalAlignment="Top" Width="110" Background="#FFF44336" SelectionChanged="dai_SelectionChanged">
+             d:DesignHeight="450" Width="1876.5" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+    <Grid Width="900" HorizontalAlignment="Center">
+        <Label Content="Dairy Products" HorizontalAlignment="Left" Margin="148,154,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="12"/>
+        <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="150,180,0,0" VerticalAlignment="Top" Width="105" Background="#FFF44336" SelectionChanged="dai_SelectionChanged">
             <ListBoxItem Content="Butter" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Cheese" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Ice Cream" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Condensed Milk" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Milk" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Soy Milk" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Yogurt" Foreground="#DDFFFFFF"></ListBoxItem>
         </ListBox>
 
-        <Label Content="Fruits" HorizontalAlignment="Left" Margin="156,160,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="fru" HorizontalAlignment="Left" Background="#FFF44336" Height="195" Margin="161,185,0,0" VerticalAlignment="Top" Width="110" SelectionChanged="fru_SelectionChanged">
+        <Label Content="Fruits &amp; Vegetables" HorizontalAlignment="Left" Margin="272,154,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="12"/>
+        <ListBox Name="fru" HorizontalAlignment="Left" Background="#FFF44336" Height="194" Margin="275,180,0,0" VerticalAlignment="Top" Width="105" SelectionChanged="fru_SelectionChanged">
             <ListBoxItem Content="Apple" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Avocado" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Banana" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Blackberry" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Beans" Foreground="#DDFFFFFF"/>
             <ListBoxItem Content="Blueberry" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Cherry" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Coconut" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Grape" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Carrot" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Kiwi" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Lemon" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Mango" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Melon" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Orange" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Passionfruit" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Peach" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Pear" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Pineapple" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Strawberry" Foreground="#DDFFFFFF"></ListBoxItem>
-        </ListBox>
-        <Label Content="Vegetables" HorizontalAlignment="Left" Margin="302,160,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="14"/>
-        <ListBox Name="veg" HorizontalAlignment="Left" Height="195" Background="#FFF44336" Margin="307,185,0,0" VerticalAlignment="Top" Width="110" SelectionChanged="veg_SelectionChanged">
-            <ListBoxItem Content="Aspargus" Foreground="#DDFFFFFF"/>
-            <ListBoxItem Content="Beans" Foreground="#DDFFFFFF"/>
-            <ListBoxItem Content="Broccoli" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Carrot" Foreground="#DDFFFFFF"></ListBoxItem>
-            <ListBoxItem Content="Chickpeas" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Lettuce" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Mango" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Onion" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Orange" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Pineapple" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Potato" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Spinach" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Strawberry" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Tomato" Foreground="#DDFFFFFF"></ListBoxItem>
         </ListBox>
-        <Label Content="Add Custom Ingredient" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Name="TextBox" Height="26" Margin="15,37,0,0" TextWrapping="Wrap" Text="Ingredient Name" VerticalAlignment="Top" Width="147" Foreground="Black" GotFocus="TextBox_GotFocus_1" Focusable="True"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="15,72,0,0" VerticalAlignment="Top" Width="69" FontWeight="Bold" FontSize="12"/>
+        <Label Content="Meat and Fish" HorizontalAlignment="Left" Margin="397,154,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="12"/>
+        <ListBox Name="veg" HorizontalAlignment="Left" Height="194" Background="#FFF44336" Margin="400,180,0,0" VerticalAlignment="Top" Width="105" SelectionChanged="veg_SelectionChanged">
+            <ListBoxItem Content="Chicken" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Codfish" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Egg" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Ham" Foreground="#DDFFFFFF"/>
+            <ListBoxItem Content="Hamburguer" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Tuna" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Turkey" Foreground="#DDFFFFFF"></ListBoxItem>
+        </ListBox>
 
-        <ComboBox Name="combo"  Text="Category" HorizontalAlignment="Left" Margin="84,68,0,0" VerticalAlignment="Top" Width="120" IsEditable="False">
+
+        <Label Content="Others" HorizontalAlignment="Left" Margin="522,154,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="12"/>
+        <ListBox Name="ot" HorizontalAlignment="Left" Height="196" Background="#FFF44336" Margin="525,178,0,0" VerticalAlignment="Top" Width="105" SelectionChanged="ot_SelectionChanged">
+            <ListBoxItem Content="Bread" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Salt" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Salsa" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Sugar" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Water" Foreground="#DDFFFFFF"/>
+        </ListBox>
+        <Label Content="Add Custom Ingredient" HorizontalAlignment="Left" Margin="130,4,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Name="TextBox" Height="26" Margin="134,32,0,0" TextWrapping="Wrap" Text="Ingredient Name" VerticalAlignment="Top" Width="146" Foreground="Black" GotFocus="TextBox_GotFocus_1" Focusable="True"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="130,66,0,0" VerticalAlignment="Top" Width="68" FontWeight="Bold" FontSize="12"/>
+
+        <ComboBox Name="combo"  Text="Category" HorizontalAlignment="Left" Margin="195,58,0,0" VerticalAlignment="Top" Width="120" IsEditable="False">
             <ComboBoxItem>Daily Products</ComboBoxItem>
             <ComboBoxItem>Fruit</ComboBoxItem>
             <ComboBoxItem>Vegetables</ComboBoxItem>
         </ComboBox>
-        <Button Content="Add to list" HorizontalAlignment="Left" Margin="221,42,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
-        <Label Content="Your Ingredients" HorizontalAlignment="Left" Margin="485,160,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="14"/>
-        <ListBox HorizontalAlignment="Left" Height="194" Margin="489,185,0,0" Background="#FFF44336" VerticalAlignment="Top" Width="100" Name="selGred" SelectionChanged="selGred_SelectionChanged"/>
-        <ListBox HorizontalAlignment="Left" Height="114" Margin="395,10,0,0" VerticalAlignment="Top" Background="#FFF44336" Name="recipeListBox"  Width="122"/>
-        <Button Content="Get Recipes!" HorizontalAlignment="Left" Margin="527,53,0,0" VerticalAlignment="Top" Width="105" Click="Button_Click_1"/>
+        <Button Content="Add to list" HorizontalAlignment="Left" Margin="340,36,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click"/>
+        <Label Content="Your Ingredients" HorizontalAlignment="Left" Margin="654,154,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="12"/>
+        <ListBox HorizontalAlignment="Left" Height="194" Margin="660,180,0,0" Background="#FFF44336" VerticalAlignment="Top" Width="105" Name="selGred" SelectionChanged="selGred_SelectionChanged"/>
+        <ListBox HorizontalAlignment="Left" Height="114" Margin="514,4,0,0" VerticalAlignment="Top" Background="#FFF44336" Name="recipeListBox"  Width="122"/>
+        <Button Content="Get Recipes!" HorizontalAlignment="Left" Margin="646,48,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1"/>
     </Grid>
 </UserControl>

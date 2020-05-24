@@ -133,10 +133,8 @@ C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\AddRecipe.g.cs
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\AddRecipe.baml
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Register.baml
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddRecipe.g.cs
-C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Recipes.g.cs
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Register.g.cs
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\AddRecipe.baml
-C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\Recipes.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\AddRecipe.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\Recipes.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\Projeto-CookIT\IHC-Project\CookIT\obj\Debug\AddRecipe.baml
@@ -247,3 +245,13 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\recipeEsquerdaLemonade.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\lemonadeRecipe.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\recipeEsquerdaLemonade.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\contactUs.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\lemonadeRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\pizzaRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipeEsquerdaLemonade.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipesdown.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\contactUs.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\lemonadeRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\pizzaRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipeEsquerdaLemonade.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipesdown.baml

@@ -24,9 +24,9 @@ namespace CookIT
         List<string> fruList = new List<string>();
         List<string> vegList = new List<string>();
         List<string[]> recipeList = new List<string[]>();
-        string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot" };
+        string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot", "Onion" };
         string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
-        string[] strawbIC = {"Strawberry Ice Cream", "Ice Cream", "Water", "Strawberry"};
+        string[] strawbIC = {"Strawberry Dessert", "Condensed Milk", "Water", "Strawberry Jelly"};
         string[] lemonade = {"Lemonade", "Lemon", "Water", "Sugar" };
         string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg" };
         public AddIngredient()
@@ -122,6 +122,27 @@ namespace CookIT
             var temp = new ListBoxItem();
             temp = new ListBoxItem();
             temp.Content = (veg.SelectedItem.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
+            temp.Foreground = Brushes.White;
+            bool skip = false;
+            foreach (var x in selGred.Items)
+            {
+                if (x.ToString().Replace("System.Windows.Controls.ListBoxItem:", "").Trim().Equals(temp.Content.ToString().Trim()))
+                {
+                    skip = true;
+                }
+            }
+            if (!skip)
+            {
+                selGred.Items.Add(temp);
+            }
+
+        }
+
+        private void ot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var temp = new ListBoxItem();
+            temp = new ListBoxItem();
+            temp.Content = (ot.SelectedItem.ToString().Replace("System.Windows.Controls.ListBoxItem:", ""));
             temp.Foreground = Brushes.White;
             bool skip = false;
             foreach (var x in selGred.Items)
