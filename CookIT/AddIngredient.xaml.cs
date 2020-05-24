@@ -49,7 +49,7 @@ namespace CookIT
             string txt = TextBox.Text;
             string cat = combo.Text;
 
-            if (cat == "Daily Products")
+            if (cat == "Dairy Products")
             {
                 var item = new ListBoxItem();
                 item.Content = txt;
@@ -57,21 +57,32 @@ namespace CookIT
                 dai.Items.Add(item);
                 MessageBox.Show(txt + " added to category " + cat, "Success!");
             }
-            if (cat == "Fruit")
-            {
-                var item = new ListBoxItem();
-                item.Content = txt;
-                item.Foreground = Brushes.White;
-                fru.Items.Add(item);
-                MessageBox.Show(txt + " added to category " + cat, "Success!");
-            }
-            if (cat == "Vegetables")
+            if (cat == "Meat and Fish")
             {
                 var item = new ListBoxItem();
                 item.Content = txt;
                 item.Foreground = Brushes.White;
                 veg.Items.Add(item);
                 MessageBox.Show(txt + " added to category " + cat, "Success!");
+            }
+            if (cat == "Others")
+            {
+                var item = new ListBoxItem();
+                item.Content = txt;
+                item.Foreground = Brushes.White;
+                ot.Items.Add(item);
+                MessageBox.Show(txt + " added to category " + cat, "Success!");
+            }
+            else
+            {
+                if (cat != "Category")
+                {
+                    var item = new ListBoxItem();
+                    item.Content = txt;
+                    item.Foreground = Brushes.White;
+                    fru.Items.Add(item);
+                    MessageBox.Show(txt + " added to category " + cat, "Success!");
+                }
             }
         }
 
@@ -225,9 +236,5 @@ namespace CookIT
             }
         }
 
-        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

@@ -9,7 +9,7 @@
     <Grid Width="900" HorizontalAlignment="Center">
         <Label Content="Dairy Products" HorizontalAlignment="Left" Margin="148,154,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="12"/>
         <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="150,180,0,0" VerticalAlignment="Top" Width="105" Background="#FFF44336" SelectionChanged="dai_SelectionChanged">
-            <ListBoxItem Content="Butter" Foreground="#DDFFFFFF" Selected="ListBoxItem_Selected"></ListBoxItem>
+            <ListBoxItem Content="Butter" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Cheese" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Condensed Milk" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Milk" Foreground="#DDFFFFFF"></ListBoxItem>
@@ -61,9 +61,11 @@
         <Label Content="Category" HorizontalAlignment="Left" Margin="130,66,0,0" VerticalAlignment="Top" Width="68" FontWeight="Bold" FontSize="12"/>
 
         <ComboBox Name="combo"  Text="Category" HorizontalAlignment="Left" Margin="195,58,0,0" VerticalAlignment="Top" Width="120" IsEditable="False">
-            <ComboBoxItem>Daily Products</ComboBoxItem>
-            <ComboBoxItem>Fruit</ComboBoxItem>
-            <ComboBoxItem>Vegetables</ComboBoxItem>
+            <ComboBoxItem>Dairy Products</ComboBoxItem>
+            <ComboBoxItem>Fruits &amp; Vegetables</ComboBoxItem>
+            <ComboBoxItem>Meat and Fish</ComboBoxItem>
+            <ComboBoxItem>Others</ComboBoxItem>
+
         </ComboBox>
         <Button Content="Add to list" HorizontalAlignment="Left" Margin="340,36,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click"/>
         <Label Content="Your Ingredients" HorizontalAlignment="Left" Margin="654,154,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="12"/>

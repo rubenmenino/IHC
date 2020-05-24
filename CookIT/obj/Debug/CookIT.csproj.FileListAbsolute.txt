@@ -261,3 +261,9 @@ C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.baml
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sopaRecipe.g.cs
 C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sopaRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\burguerRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\sopaRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\burguerRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\sopaRecipe.baml
