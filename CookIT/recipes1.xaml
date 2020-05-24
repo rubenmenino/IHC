@@ -37,7 +37,7 @@
 
                     <StackPanel Width="200">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Text="Soup" Foreground="#FF3B3BD6"/>
-                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4">
+                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_3">
                             <Image Source="Images/sopa.jpeg" Height="99" Stretch="UniformToFill" />
                         </Button>
 
@@ -55,7 +55,7 @@
 
                     <StackPanel Width="200">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Text="Dessert" Foreground="#FF3B3BD6"/>
-                        <Button Height="174" Padding="0" Background="#FFC7C4C4" Margin="14,0,10,0">
+                        <Button Height="174" Padding="0" Background="#FFC7C4C4" Margin="14,0,10,0" Click="Button_Click_4">
                             <Image Source="Images/morango.jpg" Height="130" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" Width="172" >
                                 <Image.RenderTransform>
                                     <TransformGroup>

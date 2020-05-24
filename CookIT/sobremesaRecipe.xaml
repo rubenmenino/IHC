@@ -1,0 +1,17 @@
+﻿<Window x:Class="CookIT.sobremesaRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookIT"
+        mc:Ignorable="d"
+        Title="sobremesaRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="36,78,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="
+Dissolve all the gelatin in the boiling water and mix well until everything dissolves.
+Add ice water and mix again. "/><LineBreak/><Run/><LineBreak/><Run Text="Add the condensed milk, beat for about 3 minutes and pour into an ovenproof dish, dish or bowls.
+Then take it to the freezer for 2 hours or until it is very consistent.
+Serve immediately. "/></TextBlock>
+        <Image HorizontalAlignment="Left" Source="/Images/morango.jpg" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
+    </Grid>
+</Window>

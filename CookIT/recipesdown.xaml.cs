@@ -36,5 +36,23 @@ namespace CookIT
             recipeEsquerdaLemonade uuu = new recipeEsquerdaLemonade();
             NavigationService.GetNavigationService(this).Navigate(uuu);
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            burguerRecipe burguer = new burguerRecipe();
+            burguer.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            sopaRecipe zzz = new sopaRecipe();
+            zzz.Show();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            sobremesaRecipe mmm = new sobremesaRecipe();
+            mmm.Show();
+        }
     }
 }

@@ -255,3 +255,9 @@ C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\lemonadeRecipe.baml
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\pizzaRecipe.baml
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipeEsquerdaLemonade.baml
 C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\recipesdown.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\burguerRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\burguerRecipe.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sopaRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\sopaRecipe.baml

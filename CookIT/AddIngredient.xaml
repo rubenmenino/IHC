@@ -9,7 +9,7 @@
     <Grid Width="900" HorizontalAlignment="Center">
         <Label Content="Dairy Products" HorizontalAlignment="Left" Margin="148,154,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="12"/>
         <ListBox Name="dai" HorizontalAlignment="Left" Height="194" Margin="150,180,0,0" VerticalAlignment="Top" Width="105" Background="#FFF44336" SelectionChanged="dai_SelectionChanged">
-            <ListBoxItem Content="Butter" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Butter" Foreground="#DDFFFFFF" Selected="ListBoxItem_Selected"></ListBoxItem>
             <ListBoxItem Content="Cheese" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Condensed Milk" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Milk" Foreground="#DDFFFFFF"></ListBoxItem>

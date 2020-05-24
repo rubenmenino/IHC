@@ -72,6 +72,9 @@
     <Compile Include="AddRecipe.xaml.cs">
       <DependentUpon>AddRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="burguerRecipe.xaml.cs">
+      <DependentUpon>burguerRecipe.xaml</DependentUpon>
+    </Compile>
     <Compile Include="contactUs.xaml.cs">
       <DependentUpon>contactUs.xaml</DependentUpon>
     </Compile>
@@ -100,11 +103,21 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="sobremesaRecipe.xaml.cs">
+      <DependentUpon>sobremesaRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sopaRecipe.xaml.cs">
+      <DependentUpon>sopaRecipe.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddIngredient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="burguerRecipe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,6 +183,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sobremesaRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sopaRecipe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

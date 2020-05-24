@@ -28,7 +28,7 @@ namespace CookIT
         string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
         string[] strawbIC = {"Strawberry Dessert", "Condensed Milk", "Water", "Strawberry Jelly"};
         string[] lemonade = {"Lemonade", "Lemon", "Water", "Sugar" };
-        string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg" };
+        string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg", "Cheese" };
         public AddIngredient()
         {
             InitializeComponent();
@@ -223,6 +223,11 @@ namespace CookIT
                     recipeListBox.Items.Add(temp);
                 }
             }
+        }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
