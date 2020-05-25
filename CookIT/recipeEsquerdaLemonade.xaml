@@ -70,12 +70,16 @@
                         <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Pasta"/><LineBreak/><Run Text="   - Water" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="   - Salt"/><LineBreak/></TextBlock>
                     </StackPanel>
                 </Grid>
-                <Grid HorizontalAlignment="Left" Height="104" Margin="10,164,0,0" VerticalAlignment="Top" Width="74">
+                <Grid HorizontalAlignment="Left" Height="104" Margin="-38,172,0,0" VerticalAlignment="Top" Width="74">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="35*"/>
                         <ColumnDefinition Width="27*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="6"  FontFamily="Marlett" FontSize="20" Click="Button_Click" Margin="0,29,31,46" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Height="Auto">
+                    <Button Content="6"  FontFamily="Marlett" FontSize="20" Click="Button_Click" Height="40" Width="50" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Margin="13,32,11,32" Grid.ColumnSpan="2">
                         <Button.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
