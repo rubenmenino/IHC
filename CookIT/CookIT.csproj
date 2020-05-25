@@ -69,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNewRecipe.cs" />
     <Compile Include="AddRecipe.xaml.cs">
       <DependentUpon>AddRecipe.xaml</DependentUpon>
     </Compile>
@@ -88,6 +89,7 @@
     <Compile Include="lemonadeRecipe.xaml.cs">
       <DependentUpon>lemonadeRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ObservableObject.cs" />
     <Compile Include="pizzaRecipe.xaml.cs">
       <DependentUpon>pizzaRecipe.xaml</DependentUpon>
     </Compile>

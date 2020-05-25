@@ -14,34 +14,32 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using System.Security.Cryptography;
+using System.ComponentModel;
 
 namespace CookIT
 {
     /// <summary>
     /// Logika interakcji dla klasy AddRecipe.xaml
     /// </summary>
-    public partial class AddRecipe : Page
+    public partial class AddRecipe : Page, INotifyPropertyChanged
     {
-        
+
+        public System.Windows.Visibility Visibility { get; set; }
+        public int i = 1;
+        public event PropertyChangedEventHandler PropertyChanged;
         public AddRecipe()
         {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            TextBox dynamicTextBox = new TextBox();
-            dynamicTextBox.Text = "Type Partnumber";
-            Grid.SetRow(dynamicTextBox, 1);
-            Grid.SetColumn(dynamicTextBox, 0);
-            //this.MainGrid.Children.Add(dynamicTextBox);
-        }
+        
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        public void Button_Click_1(object sender, RoutedEventArgs e)
         {
+
             Label label = new Label();
             TextBox tb = new TextBox();
-            tb.Name = "RecipeName";
+            tb.Name = "Ingredient" + i;
             tb.FontSize = 15;
             label.Margin = new Thickness(0, 20, 0, 0);
             label.FontSize = 15;
@@ -50,9 +48,28 @@ namespace CookIT
             someStack.Children.Add(label);
             someStack.Children.Add(tb);
             
+            i++;
+            
         }
 
-        
+        public void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+            
+            if(RecipeName.Text == "")
+            {
+                MessageBox.Show("Enter text", "Error", MessageBoxButton.OK);
+            }
+            
+
+        }
+
+
+
+
+
+
+
     }
 
 
