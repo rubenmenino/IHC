@@ -21,16 +21,16 @@
                         <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
                     </Grid.Effect>
 
-                    <StackPanel Width="200">
+                    <StackPanel Width="200" Margin="0,0,0,17">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="Fast-"/><Run Text="Food"/></TextBlock>
                         <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_2">
-                            <Image Source="Images/burguer.jpg" Height="125" Stretch="UniformToFill" Width="173" />
+                            <Image Source="Images/transferir.jpg" Height="170" Stretch="UniformToFill" Width="308" />
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                         <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="82"><Run Text="- Lettuce"/><LineBreak/><Run Text="- Tomato" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="- Hamburguer"/><LineBreak/><Run Text="- Bread"/><LineBreak/><Run Text="- Egg"/></TextBlock>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10">
+                <Grid Grid.Column="1" Height="300" Background="#FFF3F3F3" Margin="10,66,10,65">
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
                     </Grid.Effect>
@@ -38,7 +38,7 @@
                     <StackPanel Width="200">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Text="Soup" Foreground="#FF3B3BD6"/>
                         <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_3">
-                            <Image Source="Images/sopa.jpeg" Height="99" Stretch="UniformToFill" />
+                            <Image Source="Images/sopa.jpeg" Height="160" Stretch="UniformToFill" Width="163" />
                         </Button>
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
@@ -56,7 +56,7 @@
                     <StackPanel Width="200">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Text="Dessert" Foreground="#FF3B3BD6"/>
                         <Button Height="174" Padding="0" Background="#FFC7C4C4" Margin="14,0,10,0" Click="Button_Click_4">
-                            <Image Source="Images/morango.jpg" Height="130" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" Width="172" >
+                            <Image Source="Images/morango.jpg" Height="169" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5" Width="168" >
                                 <Image.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -96,13 +96,13 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Grid.RenderTransform>
-            <Button Content="6"  FontFamily="Marlett" FontSize="20" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" Height="40" Width="50" Margin="10,11,4,13">
+            <Button Content="6"  FontFamily="Marlett" FontSize="20" RenderTransformOrigin="0.514,1.532" Click="Button_Click_1" Height="40" Width="50" Margin="17,-5,-13,15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
                         <RotateTransform Angle="-90.097"/>
-                        <TranslateTransform/>
+                        <TranslateTransform X="32.35" Y="-33.753"/>
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
