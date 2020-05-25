@@ -236,5 +236,11 @@ namespace CookIT
             }
         }
 
+        private void recipeListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (recipeListBox.SelectedIndex == -1) return;
+
+
+        }
     }
 }

@@ -54,12 +54,13 @@ namespace CookIT
 
         public void Button_Click_2(object sender, RoutedEventArgs e)
         {
+
+
+            //if(RecipeName.Text == "")
+            //{
+            //  MessageBox.Show("Enter text", "Error", MessageBoxButton.OK);
+            //}
             
-            
-            if(RecipeName.Text == "")
-            {
-                MessageBox.Show("Enter text", "Error", MessageBoxButton.OK);
-            }
             
 
         }

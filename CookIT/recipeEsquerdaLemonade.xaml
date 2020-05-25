@@ -16,7 +16,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="84,66,156.5,40" Grid.ColumnSpan="2">
+                <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="44,66,209,40" Grid.ColumnSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="89*"/>
                         <ColumnDefinition Width="112*"/>
@@ -27,11 +27,47 @@
 
                     <StackPanel Width="200" Margin="-8,17,10,0" Grid.ColumnSpan="2">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="Drinks"/></TextBlock>
-                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_1">
+                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_3">
                             <Image Source="Images/lemonade.jpg" Height="170" Stretch="UniformToFill" Width="168" />
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                         <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Lemon"/><LineBreak/><Run Text="   - Water" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="   - Sugar"/><LineBreak/></TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Name ="Hidden1" Background="#FFF3F3F3" Margin="17,66,10,40" Visibility="Hidden">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="89*"/>
+                        <ColumnDefinition Width="112*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200" Margin="-8,17,10,0" Grid.ColumnSpan="2">
+                        <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="MilkShake"/></TextBlock>
+                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_4">
+                            <Image Source="Images/banana.jpg" Height="170" Stretch="UniformToFill" Width="168" />
+                        </Button>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Banana"/><LineBreak/><Run Text="   - Milk" FontStyle="Italic" FontSize="12"/><LineBreak/></TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300"  Name ="Hidden2" Background="#FFF3F3F3" Visibility="Hidden" Margin="10,66,10,40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="89*"/>
+                        <ColumnDefinition Width="112*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="200" Margin="-8,17,10,0" Grid.ColumnSpan="2">
+                        <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="Pastas"/></TextBlock>
+                        <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_5">
+                            <Image Source="Images/mass.jpg" Height="170" Stretch="UniformToFill" Width="168" />
+                        </Button>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Pasta"/><LineBreak/><Run Text="   - Water" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="   - Salt"/><LineBreak/></TextBlock>
                     </StackPanel>
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="104" Margin="10,164,0,0" VerticalAlignment="Top" Width="74">
@@ -39,7 +75,7 @@
                         <ColumnDefinition Width="35*"/>
                         <ColumnDefinition Width="27*"/>
                     </Grid.ColumnDefinitions>
-                    <Button Content="6"  FontFamily="Marlett" FontSize="20" Click="Button_Click" Margin="16,27,15,48" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Height="Auto">
+                    <Button Content="6"  FontFamily="Marlett" FontSize="20" Click="Button_Click" Margin="0,29,31,46" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" Height="Auto">
                         <Button.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -50,6 +86,7 @@
                         </Button.RenderTransform>
                     </Button>
                 </Grid>
+                <Button Content="Toggle custom recipes" Grid.Column="2" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click_2"/>
 
             </Grid>
         </materialDesign:TransitioningContent>

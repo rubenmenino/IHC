@@ -288,3 +288,10 @@ C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\recipesdown.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\sobremesaRecipe.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\sopaRecipe.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\refresh_page.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\refresh_page.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\veganRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\veganRecipe.baml
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\massaRecipe.g.cs
+C:\Users\Utilizador\Desktop\UNIVERSIDADE\2Semestre\IHC\2º trabalho\IHC-Project\CookIT\obj\Debug\massaRecipe.baml

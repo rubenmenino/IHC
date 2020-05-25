@@ -96,7 +96,7 @@ namespace CookIT
         private void ListViewItem_MouseLeftButtonUp_3(object sender, MouseButtonEventArgs e)
         {
             Main.Content = null;
-            Main.Content = new recipes1();
+            Main.Content = new refresh_page();
         }
 
         private void ListViewItem_MouseLeftButtonUp_4(object sender, MouseButtonEventArgs e)
@@ -120,6 +120,11 @@ namespace CookIT
         {
             Main.Content = null;
             Main.Content = new Register();
+        }
+
+        private void ListViewItem_Selected_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

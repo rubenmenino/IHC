@@ -51,8 +51,8 @@
                 UpdateSourceTrigger=PropertyChanged}"/>
             <Label Grid.Row="2" Content="Select the type of food" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
             <RadioButton Grid.Row="3" Grid.Column="0" Margin="5" IsChecked="True">Vegan</RadioButton>
-            <RadioButton Grid.Row="4" Grid.Column="0" Margin="5">Vegetarian</RadioButton>
-            <RadioButton Grid.Row="5" Grid.Column="0" Margin="5">Meat</RadioButton>
+            <RadioButton Grid.Row="4" Grid.Column="0" Margin="5">MilkShake</RadioButton>
+            <RadioButton Grid.Row="5" Grid.Column="0" Margin="5">Pasta</RadioButton>
             <RadioButton Grid.Row="3" Grid.Column="1" Margin="5">Fast Food</RadioButton>
             <RadioButton Grid.Row="4" Grid.Column="1" Margin="5">Salad</RadioButton>
             <RadioButton Grid.Row="5" Grid.Column="1" Margin="5">Fish</RadioButton>
