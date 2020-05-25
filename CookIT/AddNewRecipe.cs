@@ -11,7 +11,7 @@ namespace CookIT
     {
         public string Error { get { return null;  } }
         
-        private string _recipe;
+        private string _recipe, _description;
 
        
 
@@ -21,6 +21,15 @@ namespace CookIT
             set
             {
                 OnPropertyChanged(ref _recipe, value);
+            }
+        }
+
+        public string Description
+        {
+            get { return _description; }
+            set
+            {
+                OnPropertyChanged(ref _description, value);
             }
         }
         public string this[string recipe]
@@ -33,6 +42,13 @@ namespace CookIT
                 {
                     case "Recipe":
                         if (string.IsNullOrWhiteSpace(Recipe))
+                        {
+                            result = "Field cannot be empty";
+                        }
+                        break;
+
+                    case "Description":
+                        if (string.IsNullOrWhiteSpace(Description))
                         {
                             result = "Field cannot be empty";
                         }

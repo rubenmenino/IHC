@@ -63,7 +63,7 @@
             </StackPanel>
             <Label Grid.Row="10" Content="Enter recipe description" Margin="0,50,0,0" Height="30" FontWeight="Bold" FontSize="15"/>
             <TextBox Grid.Row="11" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Description" MinHeight="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" BorderBrush="Black" BorderThickness="1" 
-                     Text="{Binding Recipe, ValidatesOnDataErrors=True,
+                     Text="{Binding Description, ValidatesOnDataErrors=True,
                 UpdateSourceTrigger=PropertyChanged}"/>
             <Button Name="AddNewRecipe" Grid.Row="15" Margin="5" Click="Button_Click_2">Add recipe</Button>
 
