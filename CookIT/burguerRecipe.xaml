@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="burguerRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="38,149,0,-14" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="Fry the hamburger, and then put in the bread. Make alternating layers of lettuce, tomato and cheese and finally put an fried egg, then cover with another slice of bread. Enjoy. "/><LineBreak/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="38,149,0,-14" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="Fry the hamburger, and then put it in the bread. Make alternating layers of lettuce, tomato and cheese and finally put fried egg, then cover with another slice of bread. Enjoy. "/><LineBreak/></TextBlock>
         <Image HorizontalAlignment="Left" Source="/Images/burguer.jpg" Height="286" Margin="475,78,0,0" VerticalAlignment="Top" Width="293"/>
     </Grid>
 </Window>
