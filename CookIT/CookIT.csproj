@@ -96,6 +96,7 @@
     <Compile Include="pizzaRecipe.xaml.cs">
       <DependentUpon>pizzaRecipe.xaml</DependentUpon>
     </Compile>
+    <Compile Include="recipe.cs" />
     <Compile Include="recipeEsquerdaLemonade.xaml.cs">
       <DependentUpon>recipeEsquerdaLemonade.xaml</DependentUpon>
     </Compile>

@@ -18,17 +18,25 @@ namespace CookIT
     /// <summary>
     /// Interaction logic for AddIngredient.xaml
     /// </summary>
+   
     public partial class AddIngredient : UserControl
     {
         List<string> daiList = new List<string>();
         List<string> fruList = new List<string>();
         List<string> vegList = new List<string>();
-        List<string[]> recipeList = new List<string[]>();
-        string[] soup = { "Soup", "Water", "Potato", "Salt", "Carrot", "Onion" };
-        string[] pizza = { "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
-        string[] strawbIC = {"Strawberry Dessert", "Condensed Milk", "Water", "Strawberry Jelly"};
-        string[] lemonade = {"Lemonade", "Lemon", "Water", "Sugar" };
-        string[] burguer = { "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg", "Cheese" };
+        List<recipe> recipeList = new List<recipe>();
+        static List<string> soupLi = new List<string>(){ "Soup", "Water", "Potato", "Salt", "Carrot", "Onion" };
+        static List<string> pizzaLi = new List<string>(){ "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
+        static List<string> strawbICLi = new List<string>(){ "Strawberry Dessert", "Condensed Milk", "Water", "Strawberry Jelly" };
+        static List<string> lemonadeLi = new List<string>(){ "Lemonade", "Lemon", "Water", "Sugar" };
+        static List<string> burguerLi = new List<string>(){ "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg", "Cheese" };
+
+        recipe soup = new recipe("Soup", soupLi);
+        recipe pizza = new recipe("Pizza", pizzaLi);
+        recipe strawbIC = new recipe("Strawberry Ice Dessert", strawbICLi);
+        recipe lemonade = new recipe("Lemonade", lemonadeLi);
+        recipe burguer = new recipe("Burger", burguerLi);
+
         public AddIngredient()
         {
             InitializeComponent();
@@ -125,7 +133,6 @@ namespace CookIT
             {
                 selGred.Items.Add(temp);
             }
-           
         }
 
         private void veg_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -215,32 +222,26 @@ namespace CookIT
             }
             
 
-            foreach(string[] recipe in recipeList)
+            foreach(recipe rec in recipeList)
             {
                 toSkip = false;
-                for(int i=1; i<recipe.Length; i++)
+                for(int i=1; i<rec.length(); i++)
                 {
-                    if (!listSelGred.Contains(recipe[i]))
+                    if (!listSelGred.Contains(rec.getIng().ElementAt(i)))
                     {
                         toSkip = true;
                     }
                 }
 
-                if (!recipeListBox.Items.Contains(recipe[0]) && !toSkip)
+                if (!recipeListBox.Items.Contains(rec.getIng().ElementAt(0)) && !toSkip)
                 {
                     temp = new ListBoxItem();
-                    temp.Content = (recipe[0]);
+                    temp.Content = (rec.getIng().ElementAt(0));
                     temp.Foreground = Brushes.White;
                     recipeListBox.Items.Add(temp);
                 }
             }
         }
 
-        private void recipeListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (recipeListBox.SelectedIndex == -1) return;
-
-
-        }
     }
 }

@@ -301,3 +301,10 @@ C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\veganRecipe.g.cs
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\massaRecipe.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\refresh_page.baml
 C:\Users\matir\source\repos\IHC-Project\CookIT\obj\Debug\veganRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\massaRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\refresh_page.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\veganRecipe.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\massaRecipe.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\refresh_page.baml
+C:\Users\bruno\Desktop\IHC-Project\CookIT\obj\Debug\veganRecipe.baml
