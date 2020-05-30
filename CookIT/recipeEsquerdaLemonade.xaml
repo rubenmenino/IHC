@@ -31,10 +31,10 @@
                             <Image Source="Images/lemonade.jpg" Height="170" Stretch="UniformToFill" Width="168" />
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
-                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Lemon"/><LineBreak/><Run Text="   - Water" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="   - Sugar"/><LineBreak/></TextBlock>
+                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"></TextBlock>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="1" Height="300" Name ="Hidden1" Background="#FFF3F3F3" Margin="17,66,10,40" Visibility="Hidden">
+                <Grid Grid.Column="1" Height="300" Name ="Hidden1" Background="#FFF3F3F3" Margin="17,66,10,40" Visibility="Visible">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="89*"/>
                         <ColumnDefinition Width="112*"/>
@@ -46,13 +46,13 @@
                     <StackPanel Width="200" Margin="-8,17,10,0" Grid.ColumnSpan="2">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="MilkShake"/></TextBlock>
                         <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_4">
-                            <Image Source="Images/banana.jpg" Height="170" Stretch="UniformToFill" Width="168" />
+                           
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
-                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Banana"/><LineBreak/><Run Text="   - Milk" FontStyle="Italic" FontSize="12"/><LineBreak/></TextBlock>
+                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"></TextBlock>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="2" Height="300"  Name ="Hidden2" Background="#FFF3F3F3" Visibility="Hidden" Margin="10,66,10,40">
+                <Grid Grid.Column="2" Height="300"  Name ="Hidden2" Background="#FFF3F3F3" Visibility="Visible" Margin="10,66,10,40">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="89*"/>
                         <ColumnDefinition Width="112*"/>
@@ -64,10 +64,10 @@
                     <StackPanel Width="200" Margin="-8,17,10,0" Grid.ColumnSpan="2">
                         <TextBlock Margin="10" FontFamily="Open Sans" FontSize="12" Foreground="#FF3B3BD6"><Run Text="Pastas"/></TextBlock>
                         <Button  Width="173" Height="170" Padding="0" Background="#FFC7C4C4" Click="Button_Click_5">
-                            <Image Source="Images/mass.jpg" Height="170" Stretch="UniformToFill" Width="168" />
+                           
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
-                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"><Run Text="   - Pasta"/><LineBreak/><Run Text="   - Water" FontStyle="Italic" FontSize="12"/><LineBreak/><Run Text="   - Salt"/><LineBreak/></TextBlock>
+                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70"></TextBlock>
                     </StackPanel>
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="104" Margin="-38,172,0,0" VerticalAlignment="Top" Width="74">
@@ -90,7 +90,6 @@
                         </Button.RenderTransform>
                     </Button>
                 </Grid>
-                <Button Content="Toggle custom recipes" Grid.Column="2" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click_2"/>
 
             </Grid>
         </materialDesign:TransitioningContent>

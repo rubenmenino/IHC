@@ -107,9 +107,6 @@
     <Compile Include="recipesdown.xaml.cs">
       <DependentUpon>recipesdown.xaml</DependentUpon>
     </Compile>
-    <Compile Include="refresh_page.xaml.cs">
-      <DependentUpon>refresh_page.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
@@ -196,10 +193,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="recipesdown.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="refresh_page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
