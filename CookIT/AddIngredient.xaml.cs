@@ -238,7 +238,7 @@ namespace CookIT
                 if (!recipeListBox.Items.Contains(rec.getIng().ElementAt(0)) && !toSkip)
                 {
                     temp = new ListBoxItem();
-                    temp.Content = (rec.getIng().ElementAt(0));
+                    temp.Content = (rec.getName());
                     temp.Foreground = Brushes.White;
                     recipeListBox.Items.Add(temp);
                 }

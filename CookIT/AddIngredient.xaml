@@ -51,6 +51,7 @@
         <Label Content="Others" HorizontalAlignment="Left" Margin="522,154,0,0" VerticalAlignment="Top" Width="140" FontWeight="Bold" FontSize="12"/>
         <ListBox Name="ot" HorizontalAlignment="Left" Height="196" Background="#FFF44336" Margin="525,178,0,0" VerticalAlignment="Top" Width="105" SelectionChanged="ot_SelectionChanged">
             <ListBoxItem Content="Bread" Foreground="#DDFFFFFF"></ListBoxItem>
+            <ListBoxItem Content="Pasta" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Salt" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Salsa" Foreground="#DDFFFFFF"></ListBoxItem>
             <ListBoxItem Content="Sugar" Foreground="#DDFFFFFF"></ListBoxItem>

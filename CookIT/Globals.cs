@@ -24,7 +24,7 @@ namespace CookIT
             List<string> lemonadeLi = new List<string>() {"Lemon", "Water", "Sugar" };
             List<string> burguerLi = new List<string>() {"Lettuce", "Tomato", "Hamburguer", "Bread", "Egg", "Cheese" };
             List<string> bmilkLi = new List<string>() {"Banana", "Milk "};
-            List<string> pastaLi = new List<string>() { "Pasta", "Water", "Salt" };
+            List<string> pastaLi = new List<string>() { "Pasta", "Water", "Salt", "Pasta" };
 
             recipe soup = new recipe("Soup", soupLi, "Soup", "In a large soup pan over medium-high heat add the onion and then stir in the carrots and the potato. Allow to cook a minute or two, and then add the salt and water, adding more water to cover if needed. Simmer until the carrots are tender, 10 - 15 minutes, then puree using a blender or hand blender until the soup is completely silky smooth.") ;
             recipe pizza = new recipe("Pizza", pizzaLi, "Fast-Food", "Preheat oven to 450 degrees F(230 degrees C).Turn dough out onto a lightly floured surface and pat or roll into a round.Transfer crust to a lightly greased pizza pan or baker's peel dusted with cornmeal. Spread with tomato, cheese and pineapple and bake in preheated oven for 15 to 20 minutes, or until golden brown.Let baked pizza cool for 5 minutes before serving.");
