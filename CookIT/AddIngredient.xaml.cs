@@ -24,27 +24,31 @@ namespace CookIT
         List<string> daiList = new List<string>();
         List<string> fruList = new List<string>();
         List<string> vegList = new List<string>();
-        List<recipe> recipeList = new List<recipe>();
-        static List<string> soupLi = new List<string>(){ "Soup", "Water", "Potato", "Salt", "Carrot", "Onion" };
-        static List<string> pizzaLi = new List<string>(){ "Pizza", "Tomato", "Cheese", "Pineapple", "Ham", "Bread" };
-        static List<string> strawbICLi = new List<string>(){ "Strawberry Dessert", "Condensed Milk", "Water", "Strawberry Jelly" };
-        static List<string> lemonadeLi = new List<string>(){ "Lemonade", "Lemon", "Water", "Sugar" };
-        static List<string> burguerLi = new List<string>(){ "Burguer", "Lettuce", "Tomato", "Hamburguer", "Bread", "Egg", "Cheese" };
 
-        recipe soup = new recipe("Soup", soupLi);
-        recipe pizza = new recipe("Pizza", pizzaLi);
-        recipe strawbIC = new recipe("Strawberry Ice Dessert", strawbICLi);
-        recipe lemonade = new recipe("Lemonade", lemonadeLi);
-        recipe burguer = new recipe("Burger", burguerLi);
+        
 
         public AddIngredient()
         {
             InitializeComponent();
-            recipeList.Add(soup);
-            recipeList.Add(pizza);
-            recipeList.Add(strawbIC);
-            recipeList.Add(lemonade);
-            recipeList.Add(burguer);
+
+            // O ficheiro Globals.cs é onde definem variáveis e métodos Globais, os quais devem ser definidos como "public static"
+            // Esta linha chama um método global
+            Globals.InitListaReceitas();
+
+            // Outra forma de adicionar receitas é adicionarem diretamente à variável global "receitas"
+            // Para adicionar mais receitas à variável Global é utilizar o método Add.
+            // Esta linha de código em baixo adiciona a receita "soup" à lista Global de receitas 
+                    //Globals.receitas.Add(soup);
+
+            //Este bloco de código lista todas as receitas da vossa variável Global com a lista de receitas
+            for (int i = 0; i < Globals.receitas.Count(); i++)
+            {
+                Console.WriteLine(Globals.receitas[i].getName());
+            }
+
+           
+
+
 
         }
         private void TextBox_GotFocus_1(object sender, RoutedEventArgs e)
@@ -81,17 +85,15 @@ namespace CookIT
                 ot.Items.Add(item);
                 MessageBox.Show(txt + " added to category " + cat, "Success!");
             }
-            else
+            if (cat == "Fruits & Vegetables")
             {
-                if (cat != "Category")
-                {
-                    var item = new ListBoxItem();
-                    item.Content = txt;
-                    item.Foreground = Brushes.White;
-                    fru.Items.Add(item);
-                    MessageBox.Show(txt + " added to category " + cat, "Success!");
-                }
+                var item = new ListBoxItem();
+                item.Content = txt;
+                item.Foreground = Brushes.White;
+                fru.Items.Add(item);
+                MessageBox.Show(txt + " added to category " + cat, "Success!");
             }
+      
         }
 
         private void dai_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -222,8 +224,8 @@ namespace CookIT
             }
             
 
-            foreach(recipe rec in recipeList)
-            {
+           foreach(recipe rec in Globals.receitas)
+           { 
                 toSkip = false;
                 for(int i=1; i<rec.length(); i++)
                 {
@@ -240,7 +242,7 @@ namespace CookIT
                     temp.Foreground = Brushes.White;
                     recipeListBox.Items.Add(temp);
                 }
-            }
+           }
         }
 
     }

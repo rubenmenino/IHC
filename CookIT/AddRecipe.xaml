@@ -10,7 +10,7 @@
     <Page.DataContext>
         <local:AddNewRecipe/>
     </Page.DataContext>
-    
+
     <ScrollViewer>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -46,12 +46,12 @@
             <TextBox Grid.Row="0" Grid.Column="1" Name="RecipeName" Height="40" FontSize="15" Text="{Binding Recipe, ValidatesOnDataErrors=True,
                 UpdateSourceTrigger=PropertyChanged}"/>
             <Label Grid.Row="2" Content="Select the type of food" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
-            <RadioButton Grid.Row="3" Grid.Column="0" Margin="5" IsChecked="True">Vegan</RadioButton>
+            <RadioButton Grid.Row="3" Grid.Column="0" Margin="5" IsChecked="True" Checked="RadioButton_Checked">Soup</RadioButton>
             <RadioButton Grid.Row="4" Grid.Column="0" Margin="5">MilkShake</RadioButton>
             <RadioButton Grid.Row="5" Grid.Column="0" Margin="5">Pasta</RadioButton>
             <RadioButton Grid.Row="3" Grid.Column="1" Margin="5">Fast Food</RadioButton>
-            <RadioButton Grid.Row="4" Grid.Column="1" Margin="5">Salad</RadioButton>
-            <RadioButton Grid.Row="5" Grid.Column="1" Margin="5">Fish</RadioButton>
+            <RadioButton Grid.Row="4" Grid.Column="1" Margin="5">Drinks</RadioButton>
+            <RadioButton Grid.Row="5" Grid.Column="1" Margin="5">Dessert</RadioButton>
             <Label Grid.Row="7" Grid.Column="0" Content="Enter ingridient name" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
             <TextBox Grid.Row="7" Grid.Column="1" Name="Ingr1" Height="40" FontSize="15"/>
             <Label Grid.Row="8" Grid.Column="0" Content="Enter ingridient name" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
@@ -62,8 +62,8 @@
             <TextBox Grid.Row="10" Grid.Column="1" Name="Ingr4" Height="40" FontSize="15"/>
             <Label Grid.Row="11" Grid.Column="0" Content="Enter ingridient name" Margin="0,50,0,0" Height="40" FontWeight="Bold" FontSize="15"/>
             <TextBox Grid.Row="11" Grid.Column="1" Name="Ingr5" Height="40" FontSize="15"/>
-        
-            
+
+
             <Label Grid.Row="12" Content="Enter recipe description" Margin="0,50,0,0" Height="30" FontWeight="Bold" FontSize="15"/>
             <TextBox Grid.Row="13" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" Name="Description" MinHeight="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" BorderBrush="Black" BorderThickness="1" 
                      Text="{Binding Description, ValidatesOnDataErrors=True,

@@ -80,6 +80,7 @@
       <DependentUpon>contactUs.xaml</DependentUpon>
     </Compile>
     <Compile Include="DialogResult.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>

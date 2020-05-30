@@ -14,10 +14,12 @@ namespace CookIT
         List<string> ing = new List<string>();
 
 
-        public recipe(string name, List<string> ing)
+        public recipe(string name, List<string> ing, string type, string desc)
         {
             this.name = name;
             this.ing = ing;
+            this.type = type;
+            this.desc = desc;
         }
         public void setType(string type)
         {

@@ -34,9 +34,9 @@ namespace CookIT
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            if(Ingr1.Text == "" && Ingr2.Text == "" && Ingr3.Text == "" && Ingr4.Text == "" && Ingr5.Text == "")
+            if (Ingr1.Text == "" && Ingr2.Text == "" && Ingr3.Text == "" && Ingr4.Text == "" && Ingr5.Text == "")
             {
-              MessageBox.Show("Input at least one ingridient", "Error", MessageBoxButton.OK);
+                MessageBox.Show("Input at least one ingridient", "Error", MessageBoxButton.OK);
             }
             else
             {
@@ -45,6 +45,10 @@ namespace CookIT
 
         }
 
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 
