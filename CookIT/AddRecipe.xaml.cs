@@ -24,7 +24,6 @@ namespace CookIT
     public partial class AddRecipe : Page, INotifyPropertyChanged
     {
 
-        public System.Windows.Visibility Visibility { get; set; }
         public int i = 1;
         public event PropertyChangedEventHandler PropertyChanged;
         public AddRecipe()
@@ -32,44 +31,19 @@ namespace CookIT
             InitializeComponent();
         }
 
-        
-
         public void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
-            Label label = new Label();
-            TextBox tb = new TextBox();
-            tb.Name = "Ingredient" + i;
-            tb.FontSize = 15;
-            label.Margin = new Thickness(0, 20, 0, 0);
-            label.FontSize = 15;
-            label.FontWeight = FontWeights.Bold;
-            label.Content = "Enter ingredient: ";
-            someStack.Children.Add(label);
-            someStack.Children.Add(tb);
-            
-            i++;
-            
-        }
-
-        public void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-
-            //if(RecipeName.Text == "")
-            //{
-            //  MessageBox.Show("Enter text", "Error", MessageBoxButton.OK);
-            //}
-            
-            
+            if(Ingr1.Text == "" && Ingr2.Text == "" && Ingr3.Text == "" && Ingr4.Text == "" && Ingr5.Text == "")
+            {
+              MessageBox.Show("Input at least one ingridient", "Error", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBox.Show("Recipe has been added", "Recipe Added", MessageBoxButton.OK);
+            }
 
         }
-
-
-
-
-
-
 
     }
 
