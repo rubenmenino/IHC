@@ -227,7 +227,7 @@ namespace CookIT
            foreach(recipe rec in Globals.receitas)
            { 
                 toSkip = false;
-                for(int i=1; i<rec.length(); i++)
+                for(int i=0; i<rec.length(); i++)
                 {
                     if (!listSelGred.Contains(rec.getIng().ElementAt(i)))
                     {
@@ -235,7 +235,7 @@ namespace CookIT
                     }
                 }
 
-                if (!recipeListBox.Items.Contains(rec.getIng().ElementAt(0)) && !toSkip)
+                if (!recipeListBox.Items.Contains(rec.getName()) && !toSkip)
                 {
                     temp = new ListBoxItem();
                     temp.Content = (rec.getName());
