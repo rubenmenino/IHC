@@ -5,16 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CookIT"
         mc:Ignorable="d"
-        Title="massaRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="34,152,0,-17" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="Boil water in a large pot. Use at least 4 quarts of water for every pound of pasta.
-Salt the water with at least a tablespoon—more is fine. The salty water adds flavor to the pasta.
-
-Add and stir the pasta.
-
-Test the pasta by tasting it.
-
-Drain the pasta and you're done."/></TextBlock>
-        <Image HorizontalAlignment="Left" Source="/Images/mass.jpg" Height="331" Margin="475,124,0,-36" VerticalAlignment="Top" Width="307"/>
+        <TextBlock Name="customDesc2" HorizontalAlignment="Left" Margin="34,152,0,-17" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text=""/></TextBlock>
+        <Image HorizontalAlignment="Left" Source="/Images/custom.jpg" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
     </Grid>
 </Window>

@@ -21,14 +21,7 @@ namespace CookIT
             this.type = type;
             this.desc = desc;
         }
-        public void setType(string type)
-        {
-            this.type = type;
-        }
-        public void setDesc(string desc)
-        {
-            this.desc = desc;
-        }
+       
         public string getName()
         {
             return this.name;
@@ -38,12 +31,14 @@ namespace CookIT
         {
             return this.ing;
         }
-
-        public void addIng(string y)
+        public string getType()
         {
-            this.ing.Add(y);
+            return this.type;
         }
-
+        public string getDesc()
+        {
+            return this.desc;
+        }
         public int length()
         {
             return this.ing.Count;

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CookIT"
         mc:Ignorable="d"
-        Title="veganRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="33,175,0,-42" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="Put the milk and banana into a blender. Whizz everything up until smooth then pour into a tall glass "/><LineBreak/><Run/><LineBreak/></TextBlock>
-        <Image HorizontalAlignment="Left" Source="/Images/banana.jpg" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
+        <TextBlock Name="customDesc1" HorizontalAlignment="Left" Margin="33,175,0,-42" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold" Loaded="customDesc1_Loaded"><Run Text=""/><LineBreak/><Run/><LineBreak/></TextBlock>
+        <Image HorizontalAlignment="Left" Source="/Images/custom.jpg" Height="258" Margin="475,78,0,0" VerticalAlignment="Top" Width="271"/>
     </Grid>
 </Window>

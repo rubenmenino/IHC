@@ -21,11 +21,10 @@ namespace CookIT
     /// <summary>
     /// Logika interakcji dla klasy AddRecipe.xaml
     /// </summary>
-    public partial class AddRecipe : Page, INotifyPropertyChanged
+    public partial class AddRecipe : Page
     {
 
         public int i = 1;
-        public event PropertyChangedEventHandler PropertyChanged;
         public AddRecipe()
         {
             InitializeComponent();
@@ -107,6 +106,7 @@ namespace CookIT
 
                 recipe temp = new recipe(name, ings, cat, desc);
                 Globals.receitas.Add(temp);
+                Globals.customs.Add(temp);
             }
 
             

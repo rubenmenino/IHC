@@ -23,5 +23,11 @@ namespace CookIT
         {
             InitializeComponent();
         }
+
+        private void customDesc1_Loaded(object sender, RoutedEventArgs e)
+        {
+            customDesc1.Text = Globals.customs.ElementAt(0).getDesc();
+
+        }
     }
 }

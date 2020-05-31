@@ -31,7 +31,7 @@
                             <Image Source="Images/pizza.png" Height="170" Stretch="UniformToFill" Width="173" />
                         </Button>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
-                        <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="70" x:Name="textBlock1" ></TextBlock>
+                        <TextBlock FontSize="12" Margin="5,0,-15,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="90"><Run Text="- Tomato"/><LineBreak/><Run Text="- Cheese" FontSize="12"/><LineBreak/><Run Text="- Pineapple"/><LineBreak/><Run Text="- Ham"/><LineBreak/><Run Text="- Bread"/></TextBlock>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="1" Background="#FFF3F3F3" Margin="10,66,10,65">
@@ -49,7 +49,7 @@
                         <StackPanel Height="100"/>
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Left" Height="100" Margin="10,200,0,0" VerticalAlignment="Top" Width="180">
-                        <TextBlock FontSize="12" Margin="5,5,-15,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="80"></TextBlock>
+                        <TextBlock FontSize="12" Margin="5,5,-15,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="80"><Run Text="- Carrot"/><LineBreak/><Run Text="- Water" FontSize="12"/><LineBreak/><Run Text="- Potato"/><LineBreak/><Run Text="- Salt"/><LineBreak/><Run Text="- Onion"/></TextBlock>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="10,66,10,67">
@@ -72,7 +72,7 @@
                             </Image>
                         </Button>
 
-                        <TextBlock FontSize="12" Margin="5,5,-15,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="80"></TextBlock>
+                        <TextBlock FontSize="12" Margin="5,5,-15,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" Height="80"><Run Text="- Water"/><LineBreak/><Run Text="- Condensed Milk" FontSize="12"/><LineBreak/><Run Text="- Strawberry jelly"/></TextBlock>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Grid>

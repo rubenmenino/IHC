@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CookIT"
         mc:Ignorable="d"
-        Title="sopaRecipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Soup Recipe" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="36,78,0,0" FontSize="16" TextWrapping="Wrap" VerticalAlignment="Top" Height="286" Width="410" FontWeight="Bold"><Run Text="In a large soup pan over medium-high heat add the onion and then stir in the carrots and the potato. Allow to cook a minute or two, and then add the salt and water, adding more water to cover if needed. "/><LineBreak/><Run/><LineBreak/><Run Text="Simmer until the carrots are tender, 10 - 15 minutes, then puree using a blender or hand blender until the soup is completely silky smooth.  "/></TextBlock>
         <Image HorizontalAlignment="Left" Source="/Images/sopa.jpeg" Height="297" Margin="461,78,0,0" VerticalAlignment="Top" Width="299" RenderTransformOrigin="0.5,0.5">

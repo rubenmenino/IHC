@@ -9,6 +9,7 @@ namespace CookIT
     static class Globals
     {
         public static List<recipe> receitas = new List<recipe>();
+        public static List<recipe> customs = new List<recipe>();
 
         public static void InitListaReceitas()
         {

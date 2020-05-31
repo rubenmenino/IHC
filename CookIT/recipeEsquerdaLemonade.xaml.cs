@@ -33,21 +33,6 @@ namespace CookIT
             NavigationService.GetNavigationService(this).Navigate(ttt);
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            if (Hidden1.Visibility == Visibility.Visible)
-            {
-                Hidden1.Visibility = Visibility.Hidden;
-                Hidden2.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                Hidden1.Visibility = Visibility.Visible;
-                Hidden2.Visibility = Visibility.Visible;
-            }
-            
-        }
-
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             lemonadeRecipe qqqqqqqqqqq = new lemonadeRecipe();
@@ -64,6 +49,45 @@ namespace CookIT
         {
             massaRecipe massa = new massaRecipe();
             massa.Show();
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Globals.customs.Count == 1)
+            {
+                custom1.Visibility = Visibility.Visible;
+                customCat1.Text = Globals.customs.ElementAt(0).getType();
+                string x = "";
+                foreach(string ing in Globals.customs.ElementAt(0).getIng())
+                {
+                    x += "- " + ing + "\n";
+
+                }
+                customIng1.Text = x;
+
+            }
+
+            if(Globals.customs.Count == 2)
+            {
+                custom1.Visibility = Visibility.Visible;
+                customCat1.Text = Globals.customs.ElementAt(0).getType();
+                string x = "";
+                foreach (string ing in Globals.customs.ElementAt(0).getIng())
+                {
+                    x += "- " + ing + "\n";
+                }
+                customIng1.Text = x;
+
+
+                custom2.Visibility = Visibility.Visible;
+                customCat2.Text = Globals.customs.ElementAt(1).getType();
+                string y = "";
+                foreach (string ing in Globals.customs.ElementAt(1).getIng())
+                {
+                    y += "- " + ing + "\n";
+                }
+                customIng2.Text = x;
+            }
         }
     }
 }
