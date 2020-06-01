@@ -13,7 +13,7 @@
             <ColumnDefinition Width="227*"/>
         </Grid.ColumnDefinitions>
 
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" Grid.ColumnSpan="2">
+        <materialDesign:TransitioningContent  Grid.ColumnSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
